@@ -1,0 +1,2185 @@
+<!DOCTYPE html>
+<html ng-app="xTest">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="http://xframium.org/reporting/1.0.20/angular.js"></script>
+<script src="http://xframium.org/reporting/1.0.20/angular-animate.js"></script>
+<script src="http://xframium.org/reporting/1.0.20/angular-sanitize.js"></script>
+<script src="http://xframium.org/reporting/1.0.20/ui-bootstrap-tpls-2.js"></script>
+<script src="http://xframium.org/reporting/1.0.20/angular-ui-tree.js"></script>
+<script src="http://xframium.org/reporting/1.0.20/Chart.js"></script>
+<script src="http://xframium.org/reporting/1.0.20/angular-chart.js"></script>
+<script>var testData = {"pageData": {
+    "exceptionType": "null",
+    "aut": "null",
+    "timerStart": "0",
+    "elementUsageMap": {},
+    "failedStep": "null",
+    "elementUsage": [],
+    "iterationCount": "0",
+    "csvOutput": "",
+    "testStatus": "PASSED",
+    "dataMap": {"LoginCredentials": {
+        "recordMap": {
+            "UserName": "admin",
+            "Password": "demo123"
+        },
+        "recordName": "TestUser_One",
+        "typeName": "LoginCredentials",
+        "active": true,
+        "containsChildren": false
+    }},
+    "pageMap": {
+        "CloudSchool.CSHomePage": {
+            "m0": "public native int java.lang.Object.hashCode()",
+            "m1": "public boolean java.lang.Object.equals(java.lang.Object)",
+            "m2": "public java.lang.String java.lang.Object.toString()",
+            "m3": "public abstract java.lang.String org.xframium.page.keyWord.KeyWordPage.getPageName()",
+            "m4": "public abstract void org.xframium.page.keyWord.KeyWordPage.setPageName(java.lang.String)",
+            "m5": "public abstract void org.xframium.page.Page.setExecutionContext(org.xframium.reporting.ExecutionContextTest)",
+            "m6": "public abstract org.xframium.reporting.ExecutionContextTest org.xframium.page.Page.getExecutionContext()",
+            "m7": "public abstract org.xframium.page.element.Element org.xframium.page.Page.getElement(java.lang.String)",
+            "m8": "public abstract org.xframium.page.element.Element org.xframium.page.Page.getElement(java.lang.String,java.lang.String)",
+            "m9": "public abstract org.xframium.page.element.Element org.xframium.page.Page.getElement(org.xframium.page.ElementDescriptor)",
+            "m11": "public abstract void org.xframium.page.Page.setDriver(java.lang.Object)",
+            "m10": "public abstract void org.xframium.page.Page.initializePage()"
+        },
+        "CloudSchool.CSLoginPage": {
+            "m0": "public native int java.lang.Object.hashCode()",
+            "m1": "public boolean java.lang.Object.equals(java.lang.Object)",
+            "m2": "public java.lang.String java.lang.Object.toString()",
+            "m3": "public abstract java.lang.String org.xframium.page.keyWord.KeyWordPage.getPageName()",
+            "m4": "public abstract void org.xframium.page.keyWord.KeyWordPage.setPageName(java.lang.String)",
+            "m5": "public abstract void org.xframium.page.Page.setExecutionContext(org.xframium.reporting.ExecutionContextTest)",
+            "m6": "public abstract org.xframium.reporting.ExecutionContextTest org.xframium.page.Page.getExecutionContext()",
+            "m7": "public abstract org.xframium.page.element.Element org.xframium.page.Page.getElement(java.lang.String)",
+            "m8": "public abstract org.xframium.page.element.Element org.xframium.page.Page.getElement(java.lang.String,java.lang.String)",
+            "m9": "public abstract org.xframium.page.element.Element org.xframium.page.Page.getElement(org.xframium.page.ElementDescriptor)",
+            "m11": "public abstract void org.xframium.page.Page.setDriver(java.lang.Object)",
+            "m10": "public abstract void org.xframium.page.Page.initializePage()"
+        }
+    },
+    "pageUsageMap": {},
+    "timerName": "null",
+    "inStepListener": false,
+    "startTime": {
+        "dateTime": "09/02/2019-18:17:37",
+        "dateOnly": "09/02/2019",
+        "timeOnly": "18:17:37",
+        "raw": 1567444657167
+    },
+    "xFID": "e6e13aca-294c-41f3-8bf5-ec9f2484df8d",
+    "testName": "TC01_ValidLogin",
+    "dC": {
+        "mobileEmulationEnabled": false,
+        "timeouts": {
+            "implicit": "0",
+            "pageLoad": "300000",
+            "script": "30000"
+        },
+        "hasTouchScreen": false,
+        "platform": "XP",
+        "acceptSslCerts": false,
+        "goog:chromeOptions": {"debuggerAddress": "localhost:56366"},
+        "acceptInsecureCerts": false,
+        "webStorageEnabled": true,
+        "browserName": "chrome",
+        "takesScreenshot": true,
+        "javascriptEnabled": true,
+        "platformName": "XP",
+        "setWindowRect": true,
+        "unexpectedAlertBehaviour": "ignore",
+        "applicationCacheEnabled": false,
+        "rotatable": false,
+        "networkConnectionEnabled": false,
+        "chrome": {
+            "chromedriverVersion": "76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024})",
+            "userDataDir": "C:\\Users\\abbey\\AppData\\Local\\Temp\\scoped_dir14192_322458006"
+        },
+        "takesHeapSnapshot": true,
+        "pageLoadStrategy": "normal",
+        "unhandledPromptBehavior": "ignore",
+        "strictFileInteractability": false,
+        "databaseEnabled": false,
+        "handlesAlerts": true,
+        "version": "76.0.3809.132",
+        "browserConnectionEnabled": false,
+        "proxy": "Proxy()",
+        "nativeEvents": true,
+        "webdriver.remote.sessionid": "dc6b4d94-4e51-49e9-a836-4db54633b896",
+        "locationContextEnabled": true,
+        "cssSelectorsEnabled": true
+    },
+    "executionParameters": {
+        "CONSOLE_LOG": "enabled",
+        "CONSOLE_LOG_ABS": "C:\\Users\\abbey\\git\\xFramium-CloudSchool\\CloudSchool\\config\\test-output\\09-02_18-17-46-537\\Windows chrome\\TC01_ValidLogin\\console.txt",
+        "CONSOLE_LOG_FILE": "console.txt",
+        "CONSOLE_LOG_PATH": "C:\\Users\\abbey\\git\\xFramium-CloudSchool\\CloudSchool\\config\\test-output\\09-02_18-17-46-537\\Windows chrome\\TC01_ValidLogin\\console.txt"
+    },
+    "c": {
+        "browserName": "chrome",
+        "model": "Chrome",
+        "_testName": "TC01_ValidLogin",
+        "platformName": "Windows",
+        "version": "",
+        "platform": "ANY"
+    },
+    "test": {
+        "deviceTags": "null",
+        "outputPage": "null",
+        "severity": "0",
+        "timed": false,
+        "reliesOn": "null",
+        "os": "null",
+        "contentKeys": [""],
+        "log": "org.apache.commons.logging.impl.Jdk14Logger@4307b672",
+        "inputPage": "null",
+        "count": "0",
+        "active": true,
+        "description": "null",
+        "threshold": "0",
+        "expectedParameters": [],
+        "stepList": [
+            {
+                "deviceTags": "null",
+                "kwDescription": "Allows the script to call another pre-defined function or test.  You can pass named context parameters that are scoped to the =function call by adding parameters with names and values.  OVERRIDE is the only reserved name using for overriding data provider names",
+                "validationType": "null",
+                "kwHelp": "https://www.xframium.org/keyword.html#kw-call",
+                "threshold": "0",
+                "sFailure": "ERROR",
+                "pageName": "null",
+                "context": "null",
+                "TOKEN_REGEX": "\\{([^\\}]*)\\}",
+                "waitFor": "null",
+                "validation": "null",
+                "reportingTokens": [],
+                "image": "null",
+                "timed": false,
+                "active": true,
+                "stepList": [],
+                "version": "null",
+                "DATA_PATTERN": "data\\{(\\w*)\\}",
+                "name": "Login_Function",
+                "parameterList": [],
+                "device": "null",
+                "successReport": "null",
+                "failureReport": "null",
+                "natualLanguage": "null",
+                "log": "org.apache.commons.logging.impl.Jdk14Logger@755d77fb",
+                "siteName": "null",
+                "description": "",
+                "poi": "null",
+                "tagNames": "null",
+                "trace": false,
+                "numberFormat": "java.text.DecimalFormat@674dc",
+                "browser": "null",
+                "tokenList": [],
+                "featureId": "11",
+                "startAt": false,
+                "kwName": "Call Test/Function",
+                "numberGenerator": "java.util.Random@2d25e824",
+                "inverse": false,
+                "os": "null",
+                "kwImpl": "org.xframium.page.keyWord.step.spi.KWSCall2",
+                "kw": "CALL2",
+                "breakpoint": false,
+                "fork": false,
+                "linkId": "null",
+                "allowMultiple": false,
+                "dataTable": "null",
+                "appContext": "null",
+                "category": "Flow Control",
+                "orMapping": false,
+                "waitTime": "0"
+            },
+            {
+                "deviceTags": "null",
+                "kwDescription": "Allows the script to call another pre-defined function or test.  You can pass named context parameters that are scoped to the =function call by adding parameters with names and values.  OVERRIDE is the only reserved name using for overriding data provider names",
+                "validationType": "null",
+                "kwHelp": "https://www.xframium.org/keyword.html#kw-call",
+                "threshold": "0",
+                "sFailure": "ERROR",
+                "pageName": "null",
+                "context": "null",
+                "TOKEN_REGEX": "\\{([^\\}]*)\\}",
+                "waitFor": "null",
+                "validation": "null",
+                "reportingTokens": [],
+                "image": "null",
+                "timed": false,
+                "active": true,
+                "stepList": [],
+                "version": "null",
+                "DATA_PATTERN": "data\\{(\\w*)\\}",
+                "name": "Logout_Function",
+                "parameterList": [],
+                "device": "null",
+                "successReport": "null",
+                "failureReport": "null",
+                "natualLanguage": "null",
+                "log": "org.apache.commons.logging.impl.Jdk14Logger@755d77fb",
+                "siteName": "null",
+                "description": "",
+                "poi": "null",
+                "tagNames": "null",
+                "trace": false,
+                "numberFormat": "java.text.DecimalFormat@674dc",
+                "browser": "null",
+                "tokenList": [],
+                "featureId": "11",
+                "startAt": false,
+                "kwName": "Call Test/Function",
+                "numberGenerator": "java.util.Random@2d25e824",
+                "inverse": false,
+                "os": "null",
+                "kwImpl": "org.xframium.page.keyWord.step.spi.KWSCall2",
+                "kw": "CALL2",
+                "breakpoint": false,
+                "fork": false,
+                "linkId": "null",
+                "allowMultiple": false,
+                "dataTable": "null",
+                "appContext": "null",
+                "category": "Flow Control",
+                "orMapping": false,
+                "waitTime": "0"
+            }
+        ],
+        "priority": "0",
+        "testTags": [""],
+        "mode": "null",
+        "operationList": "null",
+        "trace": "OFF",
+        "linkId": "null",
+        "dataDriver": "null",
+        "name": "TC01_ValidLogin",
+        "dataProviders": ["LoginCredentials.TestUser_One"]
+    },
+    "sPMap": {
+        "__outputFolder": "C:\\Users\\abbey\\git\\xFramium-CloudSchool\\CloudSchool\\config\\test-output",
+        "sun.desktop": "windows",
+        "awt.toolkit": "sun.awt.windows.WToolkit",
+        "file.encoding.pkg": "sun.io",
+        "java.specification.version": "1.8",
+        "sun.cpu.isalist": "amd64",
+        "sun.jnu.encoding": "Cp1252",
+        "java.class.path": "C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\resources.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\rt.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\jsse.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\jce.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\charsets.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\jfr.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\ext\\access-bridge-64.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\ext\\cldrdata.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\ext\\dnsns.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\ext\\jaccess.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\ext\\jfxrt.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\ext\\localedata.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\ext\\nashorn.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\ext\\sunec.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\ext\\sunjce_provider.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\ext\\sunmscapi.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\ext\\sunpkcs11.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\ext\\zipfs.jar;C:\\Users\\abbey\\git\\xFramium-CloudSchool\\xframium-driver\\bin;C:\\Users\\abbey\\.m2\\repository\\commons-logging\\commons-logging\\1.1.1\\commons-logging-1.1.1.jar;C:\\Users\\abbey\\.m2\\repository\\org\\testng\\testng\\6.9.10\\testng-6.9.10.jar;C:\\Users\\abbey\\.m2\\repository\\com\\beust\\jcommander\\1.48\\jcommander-1.48.jar;C:\\Users\\abbey\\.m2\\repository\\org\\beanshell\\bsh\\2.0b4\\bsh-2.0b4.jar;C:\\Users\\abbey\\.m2\\repository\\org\\xframium\\xframium-java\\1.0.21\\xframium-java-1.0.21.jar;C:\\Users\\abbey\\.m2\\repository\\org\\apache\\poi\\poi-ooxml\\3.11\\poi-ooxml-3.11.jar;C:\\Users\\abbey\\.m2\\repository\\org\\apache\\poi\\poi\\3.11\\poi-3.11.jar;C:\\Users\\abbey\\.m2\\repository\\org\\apache\\poi\\poi-ooxml-schemas\\3.11\\poi-ooxml-schemas-3.11.jar;C:\\Users\\abbey\\.m2\\repository\\org\\apache\\xmlbeans\\xmlbeans\\2.6.0\\xmlbeans-2.6.0.jar;C:\\Users\\abbey\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-java\\3.13.0\\selenium-java-3.13.0.jar;C:\\Users\\abbey\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-chrome-driver\\3.13.0\\selenium-chrome-driver-3.13.0.jar;C:\\Users\\abbey\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-edge-driver\\3.13.0\\selenium-edge-driver-3.13.0.jar;C:\\Users\\abbey\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-firefox-driver\\3.13.0\\selenium-firefox-driver-3.13.0.jar;C:\\Users\\abbey\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-ie-driver\\3.13.0\\selenium-ie-driver-3.13.0.jar;C:\\Users\\abbey\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-opera-driver\\3.13.0\\selenium-opera-driver-3.13.0.jar;C:\\Users\\abbey\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-remote-driver\\3.13.0\\selenium-remote-driver-3.13.0.jar;C:\\Users\\abbey\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-safari-driver\\3.13.0\\selenium-safari-driver-3.13.0.jar;C:\\Users\\abbey\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-support\\3.13.0\\selenium-support-3.13.0.jar;C:\\Users\\abbey\\.m2\\repository\\net\\bytebuddy\\byte-buddy\\1.8.3\\byte-buddy-1.8.3.jar;C:\\Users\\abbey\\.m2\\repository\\org\\apache\\commons\\commons-exec\\1.3\\commons-exec-1.3.jar;C:\\Users\\abbey\\.m2\\repository\\commons-codec\\commons-codec\\1.10\\commons-codec-1.10.jar;C:\\Users\\abbey\\.m2\\repository\\com\\google\\code\\gson\\gson\\2.8.4\\gson-2.8.4.jar;C:\\Users\\abbey\\.m2\\repository\\com\\google\\guava\\guava\\25.0-jre\\guava-25.0-jre.jar;C:\\Users\\abbey\\.m2\\repository\\com\\google\\code\\findbugs\\jsr305\\1.3.9\\jsr305-1.3.9.jar;C:\\Users\\abbey\\.m2\\repository\\org\\checkerframework\\checker-compat-qual\\2.0.0\\checker-compat-qual-2.0.0.jar;C:\\Users\\abbey\\.m2\\repository\\com\\google\\errorprone\\error_prone_annotations\\2.1.3\\error_prone_annotations-2.1.3.jar;C:\\Users\\abbey\\.m2\\repository\\com\\google\\j2objc\\j2objc-annotations\\1.1\\j2objc-annotations-1.1.jar;C:\\Users\\abbey\\.m2\\repository\\org\\codehaus\\mojo\\animal-sniffer-annotations\\1.14\\animal-sniffer-annotations-1.14.jar;C:\\Users\\abbey\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.5.5\\httpclient-4.5.5.jar;C:\\Users\\abbey\\.m2\\repository\\org\\apache\\httpcomponents\\httpcore\\4.4.9\\httpcore-4.4.9.jar;C:\\Users\\abbey\\.m2\\repository\\com\\squareup\\okhttp3\\okhttp\\3.10.0\\okhttp-3.10.0.jar;C:\\Users\\abbey\\.m2\\repository\\com\\squareup\\okio\\okio\\1.14.1\\okio-1.14.1.jar;C:\\Users\\abbey\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-api\\3.13.0\\selenium-api-3.13.0.jar;C:\\Users\\abbey\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-server\\3.13.0\\selenium-server-3.13.0.jar;C:\\Users\\abbey\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.7\\commons-lang3-3.7.jar;C:\\Users\\abbey\\.m2\\repository\\org\\apache\\commons\\commons-text\\1.1\\commons-text-1.1.jar;C:\\Users\\abbey\\.m2\\repository\\commons-io\\commons-io\\2.6\\commons-io-2.6.jar;C:\\Users\\abbey\\.m2\\repository\\commons-net\\commons-net\\3.6\\commons-net-3.6.jar;C:\\Users\\abbey\\.m2\\repository\\net\\sourceforge\\htmlunit\\htmlunit\\2.30\\htmlunit-2.30.jar;C:\\Users\\abbey\\.m2\\repository\\net\\sourceforge\\htmlunit\\htmlunit-core-js\\2.28\\htmlunit-core-js-2.28.jar;C:\\Users\\abbey\\.m2\\repository\\net\\sourceforge\\htmlunit\\htmlunit-cssparser\\1.0.0\\htmlunit-cssparser-1.0.0.jar;C:\\Users\\abbey\\.m2\\repository\\net\\sourceforge\\htmlunit\\neko-htmlunit\\2.30\\neko-htmlunit-2.30.jar;C:\\Users\\abbey\\.m2\\repository\\org\\apache\\httpcomponents\\httpmime\\4.5.5\\httpmime-4.5.5.jar;C:\\Users\\abbey\\.m2\\repository\\net\\jcip\\jcip-annotations\\1.0\\jcip-annotations-1.0.jar;C:\\Users\\abbey\\.m2\\repository\\org\\seleniumhq\\selenium\\jetty-repacked\\9.4.7.v20171121\\jetty-repacked-9.4.7.v20171121.jar;C:\\Users\\abbey\\.m2\\repository\\org\\eclipse\\jetty\\jetty-client\\9.4.7.v20170914\\jetty-client-9.4.7.v20170914.jar;C:\\Users\\abbey\\.m2\\repository\\org\\eclipse\\jetty\\jetty-http\\9.4.8.v20171121\\jetty-http-9.4.8.v20171121.jar;C:\\Users\\abbey\\.m2\\repository\\org\\eclipse\\jetty\\jetty-io\\9.4.8.v20171121\\jetty-io-9.4.8.v20171121.jar;C:\\Users\\abbey\\.m2\\repository\\org\\eclipse\\jetty\\jetty-util\\9.4.8.v20171121\\jetty-util-9.4.8.v20171121.jar;C:\\Users\\abbey\\.m2\\repository\\org\\eclipse\\jetty\\jetty-xml\\9.4.7.v20170914\\jetty-xml-9.4.7.v20170914.jar;C:\\Users\\abbey\\.m2\\repository\\org\\seleniumhq\\selenium\\htmlunit-driver\\2.30.0\\htmlunit-driver-2.30.0.jar;C:\\Users\\abbey\\.m2\\repository\\javax\\servlet\\javax.servlet-api\\3.1.0\\javax.servlet-api-3.1.0.jar;C:\\Users\\abbey\\.m2\\repository\\org\\eclipse\\jetty\\websocket\\websocket-api\\9.4.7.v20170914\\websocket-api-9.4.7.v20170914.jar;C:\\Users\\abbey\\.m2\\repository\\org\\eclipse\\jetty\\websocket\\websocket-client\\9.4.7.v20170914\\websocket-client-9.4.7.v20170914.jar;C:\\Users\\abbey\\.m2\\repository\\org\\eclipse\\jetty\\websocket\\websocket-common\\9.4.7.v20170914\\websocket-common-9.4.7.v20170914.jar;C:\\Users\\abbey\\.m2\\repository\\xalan\\serializer\\2.7.2\\serializer-2.7.2.jar;C:\\Users\\abbey\\.m2\\repository\\xalan\\xalan\\2.7.2\\xalan-2.7.2.jar;C:\\Users\\abbey\\.m2\\repository\\xerces\\xercesImpl\\2.11.0\\xercesImpl-2.11.0.jar;C:\\Users\\abbey\\.m2\\repository\\xml-apis\\xml-apis\\1.4.01\\xml-apis-1.4.01.jar;C:\\Users\\abbey\\.m2\\repository\\org\\yaml\\snakeyaml\\1.19\\snakeyaml-1.19.jar;C:\\Users\\abbey\\.m2\\repository\\org\\reflections\\reflections\\0.9.11\\reflections-0.9.11.jar;C:\\Users\\abbey\\.m2\\repository\\org\\javassist\\javassist\\3.21.0-GA\\javassist-3.21.0-GA.jar;C:\\Users\\abbey\\.m2\\repository\\io\\appium\\java-client\\6.1.0\\java-client-6.1.0.jar;C:\\Users\\abbey\\.m2\\repository\\cglib\\cglib\\3.2.6\\cglib-3.2.6.jar;C:\\Users\\abbey\\.m2\\repository\\org\\ow2\\asm\\asm\\6.0\\asm-6.0.jar;C:\\Users\\abbey\\.m2\\repository\\org\\apache\\ant\\ant\\1.9.6\\ant-1.9.6.jar;C:\\Users\\abbey\\.m2\\repository\\org\\apache\\ant\\ant-launcher\\1.9.6\\ant-launcher-1.9.6.jar;C:\\Users\\abbey\\.m2\\repository\\commons-validator\\commons-validator\\1.6\\commons-validator-1.6.jar;C:\\Users\\abbey\\.m2\\repository\\commons-beanutils\\commons-beanutils\\1.9.2\\commons-beanutils-1.9.2.jar;C:\\Users\\abbey\\.m2\\repository\\commons-digester\\commons-digester\\1.8.1\\commons-digester-1.8.1.jar;C:\\Users\\abbey\\.m2\\repository\\commons-collections\\commons-collections\\3.2.2\\commons-collections-3.2.2.jar;C:\\Users\\abbey\\.m2\\repository\\org\\springframework\\spring-context\\5.0.5.RELEASE\\spring-context-5.0.5.RELEASE.jar;C:\\Users\\abbey\\.m2\\repository\\org\\springframework\\spring-aop\\5.0.5.RELEASE\\spring-aop-5.0.5.RELEASE.jar;C:\\Users\\abbey\\.m2\\repository\\org\\springframework\\spring-beans\\5.0.5.RELEASE\\spring-beans-5.0.5.RELEASE.jar;C:\\Users\\abbey\\.m2\\repository\\org\\springframework\\spring-core\\5.0.5.RELEASE\\spring-core-5.0.5.RELEASE.jar;C:\\Users\\abbey\\.m2\\repository\\org\\springframework\\spring-jcl\\5.0.5.RELEASE\\spring-jcl-5.0.5.RELEASE.jar;C:\\Users\\abbey\\.m2\\repository\\org\\springframework\\spring-expression\\5.0.5.RELEASE\\spring-expression-5.0.5.RELEASE.jar;C:\\Users\\abbey\\.m2\\repository\\org\\aspectj\\aspectjweaver\\1.9.1\\aspectjweaver-1.9.1.jar;C:\\Users\\abbey\\.m2\\repository\\org\\openpnp\\opencv\\3.2.0-1\\opencv-3.2.0-1.jar;C:\\Users\\abbey\\.m2\\repository\\org\\glassfish\\jaxb\\jaxb-runtime\\2.2.11\\jaxb-runtime-2.2.11.jar;C:\\Users\\abbey\\.m2\\repository\\org\\jvnet\\staxex\\stax-ex\\1.7.7\\stax-ex-1.7.7.jar;C:\\Users\\abbey\\.m2\\repository\\com\\sun\\xml\\fastinfoset\\FastInfoset\\1.2.13\\FastInfoset-1.2.13.jar;C:\\Users\\abbey\\.m2\\repository\\org\\glassfish\\jaxb\\jaxb-core\\2.2.11\\jaxb-core-2.2.11.jar;C:\\Users\\abbey\\.m2\\repository\\javax\\xml\\bind\\jaxb-api\\2.2.12-b140109.1041\\jaxb-api-2.2.12-b140109.1041.jar;C:\\Users\\abbey\\.m2\\repository\\org\\glassfish\\jaxb\\txw2\\2.2.11\\txw2-2.2.11.jar;C:\\Users\\abbey\\.m2\\repository\\com\\sun\\istack\\istack-commons-runtime\\2.2\\istack-commons-runtime-2.2.jar;C:\\Users\\abbey\\.m2\\repository\\stax\\stax-api\\1.0.1\\stax-api-1.0.1.jar;C:\\Users\\abbey\\.m2\\repository\\javax\\activation\\activation\\1.1\\activation-1.1.jar;C:\\Users\\abbey\\.m2\\repository\\net\\sourceforge\\htmlcleaner\\htmlcleaner\\2.21\\htmlcleaner-2.21.jar;C:\\Users\\abbey\\.m2\\repository\\org\\jdom\\jdom2\\2.0.5\\jdom2-2.0.5.jar;C:\\Users\\abbey\\.m2\\repository\\org\\antlr\\antlr4\\4.5\\antlr4-4.5.jar;C:\\Users\\abbey\\.m2\\repository\\org\\antlr\\antlr4-runtime\\4.5\\antlr4-runtime-4.5.jar;C:\\Users\\abbey\\.m2\\repository\\org\\abego\\treelayout\\org.abego.treelayout.core\\1.0.1\\org.abego.treelayout.core-1.0.1.jar;C:\\Users\\abbey\\.m2\\repository\\org\\antlr\\antlr-runtime\\3.5.2\\antlr-runtime-3.5.2.jar;C:\\Users\\abbey\\.m2\\repository\\org\\antlr\\ST4\\4.0.8\\ST4-4.0.8.jar;C:\\Users\\abbey\\.m2\\repository\\eu\\bitwalker\\UserAgentUtils\\1.20\\UserAgentUtils-1.20.jar;C:\\Users\\abbey\\.m2\\repository\\com\\jayway\\jsonpath\\json-path\\2.0.0\\json-path-2.0.0.jar;C:\\Users\\abbey\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.10\\slf4j-api-1.7.10.jar;C:\\Users\\abbey\\.m2\\repository\\net\\minidev\\json-smart\\2.1.1\\json-smart-2.1.1.jar;C:\\Users\\abbey\\.m2\\repository\\net\\minidev\\asm\\1.0.2\\asm-1.0.2.jar;C:\\Users\\abbey\\.m2\\repository\\asm\\asm\\3.3.1\\asm-3.3.1.jar;C:\\Users\\abbey\\.m2\\repository\\com\\perfectomobile\\intellij-connector\\10.10.0.1\\intellij-connector-10.10.0.1.jar;C:\\Users\\abbey\\.m2\\repository\\com\\perfecto\\reporting-sdk\\reportium-testng\\2.2.4\\reportium-testng-2.2.4.jar;C:\\Users\\abbey\\.m2\\repository\\com\\perfecto\\reporting-sdk\\reportium-java\\2.2.4\\reportium-java-2.2.4.jar;C:\\Users\\abbey\\.m2\\repository\\com\\perfectomobile\\pm-webdriver\\10.10.0.4\\pm-webdriver-10.10.0.4.jar;C:\\Users\\abbey\\.m2\\repository\\com\\perfectomobile\\http-client\\10.10.0.4\\http-client-10.10.0.4.jar;C:\\Users\\abbey\\.m2\\repository\\info\\cukes\\cucumber-java\\1.2.5\\cucumber-java-1.2.5.jar;C:\\Users\\abbey\\.m2\\repository\\info\\cukes\\cucumber-core\\1.2.5\\cucumber-core-1.2.5.jar;C:\\Users\\abbey\\.m2\\repository\\info\\cukes\\cucumber-html\\0.2.3\\cucumber-html-0.2.3.jar;C:\\Users\\abbey\\.m2\\repository\\info\\cukes\\cucumber-jvm-deps\\1.0.5\\cucumber-jvm-deps-1.0.5.jar;C:\\Users\\abbey\\.m2\\repository\\info\\cukes\\gherkin\\2.12.2\\gherkin-2.12.2.jar;C:\\Users\\abbey\\.m2\\repository\\com\\xframium\\xframium-serialization\\2.0.6\\xframium-serialization-2.0.6.jar;C:\\Users\\abbey\\.m2\\repository\\org\\json\\json\\20160212\\json-20160212.jar;C:\\Users\\abbey\\.m2\\repository\\javax\\mail\\mail\\1.5.0-b01\\mail-1.5.0-b01.jar;C:\\Users\\abbey\\.m2\\repository\\com\\joestelmach\\natty\\0.12\\natty-0.12.jar;C:\\Users\\abbey\\.m2\\repository\\org\\mnode\\ical4j\\ical4j\\1.0.2\\ical4j-1.0.2.jar;C:\\Users\\abbey\\.m2\\repository\\commons-lang\\commons-lang\\2.6\\commons-lang-2.6.jar;C:\\Users\\abbey\\.m2\\repository\\backport-util-concurrent\\backport-util-concurrent\\3.1\\backport-util-concurrent-3.1.jar;C:\\Users\\abbey\\.m2\\repository\\org\\xframium\\alm\\1.0.4\\alm-1.0.4.jar;C:\\Users\\abbey\\.m2\\repository\\org\\slf4j\\slf4j-jdk14\\1.7.25\\slf4j-jdk14-1.7.25.jar;C:\\Users\\abbey\\.m2\\repository\\org\\xframium\\jira\\1.0.2\\jira-1.0.2.jar;C:\\Users\\abbey\\.m2\\repository\\com\\googlecode\\libphonenumber\\libphonenumber\\8.8.4\\libphonenumber-8.8.4.jar;C:\\Users\\abbey\\.m2\\repository\\com\\deque\\axe-selenium\\2.1\\axe-selenium-2.1.jar",
+        "java.vm.vendor": "Oracle Corporation",
+        "sun.arch.data.model": "64",
+        "user.variant": "",
+        "java.vendor.url": "http://java.oracle.com/",
+        "user.timezone": "Europe/London",
+        "__userName": "",
+        "os.name": "Windows 10",
+        "java.vm.specification.version": "1.8",
+        "user.country": "GB",
+        "sun.java.launcher": "SUN_STANDARD",
+        "sun.boot.library.path": "C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\bin",
+        "sun.java.command": "org.xframium.driver.TestDriver C:\\Users\\abbey\\git\\xFramium-CloudSchool\\CloudSchool\\config\\driverConfig.xml",
+        "sun.cpu.endian": "little",
+        "user.home": "C:\\Users\\abbey",
+        "user.language": "en",
+        "java.specification.vendor": "Oracle Corporation",
+        "java.home": "C:\\Program Files\\Java\\jdk1.8.0_73\\jre",
+        "file.separator": "\\",
+        "line.separator": "\r\n",
+        "java.vm.specification.vendor": "Oracle Corporation",
+        "java.specification.name": "Java Platform API Specification",
+        "java.awt.graphicsenv": "sun.awt.Win32GraphicsEnvironment",
+        "__cloudUrl": "https://127.0.0.1:4444",
+        "sun.boot.class.path": "C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\resources.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\rt.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\sunrsasign.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\jsse.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\jce.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\charsets.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\jfr.jar;C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\classes",
+        "user.script": "",
+        "sun.management.compiler": "HotSpot 64-Bit Tiered Compilers",
+        "java.runtime.version": "1.8.0_73-b02",
+        "user.name": "abbey",
+        "path.separator": ";",
+        "os.version": "10.0",
+        "java.endorsed.dirs": "C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\endorsed",
+        "java.runtime.name": "Java(TM) SE Runtime Environment",
+        "file.encoding": "Cp1252",
+        "__password": "",
+        "java.vm.name": "Java HotSpot(TM) 64-Bit Server VM",
+        "driver.retryCount": "0",
+        "java.vendor.url.bug": "http://bugreport.sun.com/bugreport/",
+        "java.io.tmpdir": "C:\\Users\\abbey\\AppData\\Local\\Temp\\",
+        "java.version": "1.8.0_73",
+        "user.dir": "C:\\Users\\abbey\\git\\xFramium-CloudSchool\\xframium-driver",
+        "os.arch": "amd64",
+        "java.vm.specification.name": "Java Virtual Machine Specification",
+        "java.awt.printerjob": "sun.awt.windows.WPrinterJob",
+        "sun.os.patch.level": "",
+        "java.library.path": "C:\\Program Files\\Java\\jdk1.8.0_73\\bin;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:/Program Files/Java/JDK18~1.0_7/jre/bin/server;C:/Program Files/Java/JDK18~1.0_7/jre/bin;C:/Program Files/Java/JDK18~1.0_7/jre/lib/amd64;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\Adobe\\AGL;C:\\Program Files (x86)\\MySQL\\MySQL Utilities\\;C:\\Program Files (x86)\\MySQL\\MySQL Utilities\\Doctrine extensions for PHP\\;C:\\Users\\abbey\\Desktop\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\apache-maven-3.6.1\\bin;C:\\Users\\abbey\\eclipse-xFramiumWorkspace\\Selenium_Java\\drivers\\iedriver;C:\\Users\\abbey\\eclipse-xFramiumWorkspace\\Selenium_Java\\drivers\\chrome\\chromedriver.exe;C:\\Users\\abbey\\eclipse-xFramiumWorkspace\\Selenium_Java\\drivers\\geckodriver\\geckodriver.exe;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Python37;C:\\Python37\\Scripts;C:\\Python37\\Lib\\site-packages\\selenium\\webdriver;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Users\\abbey\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\abbey\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;;;C:\\Users\\abbey\\Desktop;;.",
+        "java.vm.info": "mixed mode",
+        "java.vendor": "Oracle Corporation",
+        "java.vm.version": "25.73-b02",
+        "java.ext.dirs": "C:\\Program Files\\Java\\jdk1.8.0_73\\jre\\lib\\ext;C:\\WINDOWS\\Sun\\Java\\lib\\ext",
+        "sun.io.unicode.encoding": "UnicodeLittle",
+        "java.class.version": "52.0"
+    },
+    "deviceMap": {},
+    "testException": "null",
+    "stepList": [
+        {
+            "locatorResult": "null",
+            "throwable": "null",
+            "executionParameter": {},
+            "parameterList": [],
+            "customMessage": "null",
+            "step": {
+                "deviceTags": "null",
+                "kwDescription": "Allows the script to call another pre-defined function or test.  You can pass named context parameters that are scoped to the =function call by adding parameters with names and values.  OVERRIDE is the only reserved name using for overriding data provider names",
+                "validationType": "null",
+                "kwHelp": "https://www.xframium.org/keyword.html#kw-call",
+                "threshold": "0",
+                "sFailure": "ERROR",
+                "pageName": "null",
+                "context": "null",
+                "TOKEN_REGEX": "\\{([^\\}]*)\\}",
+                "waitFor": "null",
+                "validation": "null",
+                "reportingTokens": [],
+                "image": "null",
+                "timed": false,
+                "active": true,
+                "stepList": [],
+                "version": "null",
+                "DATA_PATTERN": "data\\{(\\w*)\\}",
+                "name": "Login_Function",
+                "parameterList": [],
+                "device": "null",
+                "successReport": "null",
+                "failureReport": "null",
+                "natualLanguage": "null",
+                "log": "org.apache.commons.logging.impl.Jdk14Logger@755d77fb",
+                "siteName": "null",
+                "description": "",
+                "poi": "null",
+                "tagNames": "null",
+                "trace": false,
+                "numberFormat": "java.text.DecimalFormat@674dc",
+                "browser": "null",
+                "tokenList": [],
+                "featureId": "11",
+                "startAt": false,
+                "kwName": "Call Test/Function",
+                "numberGenerator": "java.util.Random@2d25e824",
+                "inverse": false,
+                "os": "null",
+                "kwImpl": "org.xframium.page.keyWord.step.spi.KWSCall2",
+                "kw": "CALL2",
+                "breakpoint": false,
+                "fork": false,
+                "linkId": "null",
+                "allowMultiple": false,
+                "dataTable": "null",
+                "appContext": "null",
+                "category": "Flow Control",
+                "orMapping": false,
+                "waitTime": "0"
+            },
+            "startTime": {
+                "dateTime": "09/02/2019-18:17:37",
+                "dateOnly": "09/02/2019",
+                "timeOnly": "18:17:37",
+                "raw": 1567444657167
+            },
+            "endTime": {
+                "dateTime": "09/02/2019-18:17:44",
+                "dateOnly": "09/02/2019",
+                "timeOnly": "18:17:44",
+                "raw": 1567444664256
+            },
+            "stepList": [
+                {
+                    "locatorResult": "null",
+                    "throwable": "null",
+                    "executionParameter": {},
+                    "parameterList": [],
+                    "customMessage": "null",
+                    "step": {
+                        "deviceTags": "null",
+                        "kwDescription": "Allows the script to work with browser windows",
+                        "validationType": "null",
+                        "kwHelp": "https://www.xframium.org/keyword.html#kw-browser",
+                        "threshold": "0",
+                        "sFailure": "ERROR",
+                        "pageName": "null",
+                        "context": "null",
+                        "TOKEN_REGEX": "\\{([^\\}]*)\\}",
+                        "waitFor": "null",
+                        "validation": "null",
+                        "reportingTokens": [],
+                        "image": "null",
+                        "timed": false,
+                        "active": true,
+                        "stepList": [],
+                        "version": "null",
+                        "DATA_PATTERN": "data\\{(\\w*)\\}",
+                        "name": "MAXIMIZE",
+                        "parameterList": [],
+                        "device": "null",
+                        "successReport": "null",
+                        "failureReport": "null",
+                        "natualLanguage": "null",
+                        "log": "org.apache.commons.logging.impl.Jdk14Logger@755d77fb",
+                        "siteName": "null",
+                        "description": "",
+                        "poi": "null",
+                        "tagNames": "null",
+                        "trace": false,
+                        "numberFormat": "java.text.DecimalFormat@674dc",
+                        "browser": "null",
+                        "tokenList": [],
+                        "featureId": "9",
+                        "startAt": false,
+                        "kwName": "Browser Operations",
+                        "numberGenerator": "java.util.Random@2d25e824",
+                        "inverse": false,
+                        "os": "null",
+                        "kwImpl": "org.xframium.page.keyWord.step.spi.KWSBrowser",
+                        "kw": "BROWSER",
+                        "breakpoint": false,
+                        "fork": false,
+                        "linkId": "null",
+                        "allowMultiple": false,
+                        "dataTable": "null",
+                        "appContext": "null",
+                        "category": "Web",
+                        "orMapping": false,
+                        "waitTime": "0"
+                    },
+                    "startTime": {
+                        "dateTime": "09/02/2019-18:17:37",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:37",
+                        "raw": 1567444657167
+                    },
+                    "endTime": {
+                        "dateTime": "09/02/2019-18:17:37",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:37",
+                        "raw": 1567444657421
+                    },
+                    "stepList": [],
+                    "message": "null",
+                    "timingMap": {},
+                    "stepStatus": "SUCCESS"
+                },
+                {
+                    "locatorResult": [{
+                        "success": true,
+                        "time": "488",
+                        "locator": "By.xpath: //div[@class='login-logo']//a//img"
+                    }],
+                    "throwable": "null",
+                    "executionParameter": {},
+                    "parameterList": ["45"],
+                    "customMessage": "null",
+                    "step": {
+                        "deviceTags": "null",
+                        "kwDescription": "Allows the script to wait for an element to be exist in a certain state",
+                        "validationType": "null",
+                        "kwHelp": "https://www.xframium.org/keyword.html#kw-waitfor",
+                        "threshold": "0",
+                        "sFailure": "ERROR",
+                        "pageName": "CSLoginPage",
+                        "context": "null",
+                        "TOKEN_REGEX": "\\{([^\\}]*)\\}",
+                        "waitFor": "null",
+                        "validation": "null",
+                        "reportingTokens": [],
+                        "image": "null",
+                        "timed": false,
+                        "active": true,
+                        "stepList": [],
+                        "version": "null",
+                        "DATA_PATTERN": "data\\{(\\w*)\\}",
+                        "name": "CloudScl_img.VISIBLE",
+                        "parameterList": [{
+                            "fileName": "null",
+                            "usage": "null",
+                            "name": "null",
+                            "type": "STATIC",
+                            "tokenList": [],
+                            "value": "45"
+                        }],
+                        "device": "null",
+                        "successReport": "null",
+                        "failureReport": "null",
+                        "natualLanguage": "null",
+                        "log": "org.apache.commons.logging.impl.Jdk14Logger@755d77fb",
+                        "siteName": "null",
+                        "description": "",
+                        "poi": "null",
+                        "tagNames": "null",
+                        "trace": false,
+                        "numberFormat": "java.text.DecimalFormat@674dc",
+                        "browser": "null",
+                        "tokenList": [],
+                        "featureId": "55",
+                        "startAt": false,
+                        "kwName": "Wait for element",
+                        "numberGenerator": "java.util.Random@2d25e824",
+                        "inverse": false,
+                        "os": "null",
+                        "kwImpl": "org.xframium.page.keyWord.step.spi.KWSWaitFor",
+                        "kw": "WAIT_FOR",
+                        "breakpoint": false,
+                        "fork": false,
+                        "linkId": "null",
+                        "allowMultiple": false,
+                        "dataTable": "null",
+                        "appContext": "null",
+                        "category": "Verification",
+                        "orMapping": true,
+                        "waitTime": "0"
+                    },
+                    "startTime": {
+                        "dateTime": "09/02/2019-18:17:37",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:37",
+                        "raw": 1567444657437
+                    },
+                    "endTime": {
+                        "dateTime": "09/02/2019-18:17:38",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:38",
+                        "raw": 1567444658878
+                    },
+                    "stepList": [],
+                    "message": "null",
+                    "timingMap": {},
+                    "stepStatus": "SUCCESS"
+                },
+                {
+                    "locatorResult": [{
+                        "success": true,
+                        "time": "63",
+                        "locator": "By.xpath: //input[@name='username']"
+                    }],
+                    "throwable": "null",
+                    "executionParameter": {},
+                    "parameterList": ["45"],
+                    "customMessage": "null",
+                    "step": {
+                        "deviceTags": "null",
+                        "kwDescription": "Allows the script to wait for an element to be exist in a certain state",
+                        "validationType": "null",
+                        "kwHelp": "https://www.xframium.org/keyword.html#kw-waitfor",
+                        "threshold": "0",
+                        "sFailure": "ERROR",
+                        "pageName": "CSLoginPage",
+                        "context": "null",
+                        "TOKEN_REGEX": "\\{([^\\}]*)\\}",
+                        "waitFor": "null",
+                        "validation": "null",
+                        "reportingTokens": [],
+                        "image": "null",
+                        "timed": false,
+                        "active": true,
+                        "stepList": [],
+                        "version": "null",
+                        "DATA_PATTERN": "data\\{(\\w*)\\}",
+                        "name": "Username_txtbox.CLICKABLE",
+                        "parameterList": [{
+                            "fileName": "null",
+                            "usage": "null",
+                            "name": "null",
+                            "type": "STATIC",
+                            "tokenList": [],
+                            "value": "45"
+                        }],
+                        "device": "null",
+                        "successReport": "null",
+                        "failureReport": "null",
+                        "natualLanguage": "null",
+                        "log": "org.apache.commons.logging.impl.Jdk14Logger@755d77fb",
+                        "siteName": "null",
+                        "description": "",
+                        "poi": "null",
+                        "tagNames": "null",
+                        "trace": false,
+                        "numberFormat": "java.text.DecimalFormat@674dc",
+                        "browser": "null",
+                        "tokenList": [],
+                        "featureId": "55",
+                        "startAt": false,
+                        "kwName": "Wait for element",
+                        "numberGenerator": "java.util.Random@2d25e824",
+                        "inverse": false,
+                        "os": "null",
+                        "kwImpl": "org.xframium.page.keyWord.step.spi.KWSWaitFor",
+                        "kw": "WAIT_FOR",
+                        "breakpoint": false,
+                        "fork": false,
+                        "linkId": "null",
+                        "allowMultiple": false,
+                        "dataTable": "null",
+                        "appContext": "null",
+                        "category": "Verification",
+                        "orMapping": true,
+                        "waitTime": "0"
+                    },
+                    "startTime": {
+                        "dateTime": "09/02/2019-18:17:38",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:38",
+                        "raw": 1567444658878
+                    },
+                    "endTime": {
+                        "dateTime": "09/02/2019-18:17:39",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:39",
+                        "raw": 1567444659082
+                    },
+                    "stepList": [],
+                    "message": "null",
+                    "timingMap": {},
+                    "stepStatus": "SUCCESS"
+                },
+                {
+                    "locatorResult": [{
+                        "success": true,
+                        "time": "64",
+                        "locator": "By.xpath: //input[@name='username']"
+                    }],
+                    "throwable": "null",
+                    "executionParameter": {},
+                    "parameterList": ["admin"],
+                    "customMessage": "null",
+                    "step": {
+                        "deviceTags": "null",
+                        "kwDescription": "Allows the script to type or select a value",
+                        "validationType": "null",
+                        "kwHelp": "https://www.xframium.org/keyword.html#kw-set",
+                        "threshold": "0",
+                        "sFailure": "ERROR",
+                        "pageName": "CSLoginPage",
+                        "context": "null",
+                        "TOKEN_REGEX": "\\{([^\\}]*)\\}",
+                        "waitFor": "null",
+                        "validation": "null",
+                        "reportingTokens": [],
+                        "image": "null",
+                        "timed": false,
+                        "active": true,
+                        "stepList": [],
+                        "version": "null",
+                        "DATA_PATTERN": "data\\{(\\w*)\\}",
+                        "name": "Username_txtbox",
+                        "parameterList": [{
+                            "fileName": "null",
+                            "usage": "null",
+                            "name": "null",
+                            "type": "DATA",
+                            "tokenList": [],
+                            "value": "LoginCredentials.UserName"
+                        }],
+                        "device": "null",
+                        "successReport": "null",
+                        "failureReport": "null",
+                        "natualLanguage": "null",
+                        "log": "org.apache.commons.logging.impl.Jdk14Logger@755d77fb",
+                        "siteName": "null",
+                        "description": "",
+                        "poi": "null",
+                        "tagNames": "null",
+                        "trace": false,
+                        "numberFormat": "java.text.DecimalFormat@674dc",
+                        "browser": "null",
+                        "tokenList": [],
+                        "featureId": "45",
+                        "startAt": false,
+                        "kwName": "Set Value",
+                        "numberGenerator": "java.util.Random@2d25e824",
+                        "inverse": false,
+                        "os": "null",
+                        "kwImpl": "org.xframium.page.keyWord.step.spi.KWSSet",
+                        "kw": "SET",
+                        "breakpoint": false,
+                        "fork": false,
+                        "linkId": "null",
+                        "allowMultiple": false,
+                        "dataTable": "null",
+                        "appContext": "null",
+                        "category": "Interaction",
+                        "orMapping": true,
+                        "waitTime": "0"
+                    },
+                    "startTime": {
+                        "dateTime": "09/02/2019-18:17:39",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:39",
+                        "raw": 1567444659082
+                    },
+                    "endTime": {
+                        "dateTime": "09/02/2019-18:17:39",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:39",
+                        "raw": 1567444659365
+                    },
+                    "stepList": [],
+                    "message": "null",
+                    "timingMap": {},
+                    "stepStatus": "SUCCESS"
+                },
+                {
+                    "locatorResult": [{
+                        "success": true,
+                        "time": "24",
+                        "locator": "By.xpath: //input[@name='password']"
+                    }],
+                    "throwable": "null",
+                    "executionParameter": {},
+                    "parameterList": ["demo123"],
+                    "customMessage": "null",
+                    "step": {
+                        "deviceTags": "null",
+                        "kwDescription": "Allows the script to type or select a value",
+                        "validationType": "null",
+                        "kwHelp": "https://www.xframium.org/keyword.html#kw-set",
+                        "threshold": "0",
+                        "sFailure": "ERROR",
+                        "pageName": "CSLoginPage",
+                        "context": "null",
+                        "TOKEN_REGEX": "\\{([^\\}]*)\\}",
+                        "waitFor": "null",
+                        "validation": "null",
+                        "reportingTokens": [],
+                        "image": "null",
+                        "timed": false,
+                        "active": true,
+                        "stepList": [],
+                        "version": "null",
+                        "DATA_PATTERN": "data\\{(\\w*)\\}",
+                        "name": "Password_txtbox",
+                        "parameterList": [{
+                            "fileName": "null",
+                            "usage": "null",
+                            "name": "null",
+                            "type": "DATA",
+                            "tokenList": [],
+                            "value": "LoginCredentials.Password"
+                        }],
+                        "device": "null",
+                        "successReport": "null",
+                        "failureReport": "null",
+                        "natualLanguage": "null",
+                        "log": "org.apache.commons.logging.impl.Jdk14Logger@755d77fb",
+                        "siteName": "null",
+                        "description": "",
+                        "poi": "null",
+                        "tagNames": "null",
+                        "trace": false,
+                        "numberFormat": "java.text.DecimalFormat@674dc",
+                        "browser": "null",
+                        "tokenList": [],
+                        "featureId": "45",
+                        "startAt": false,
+                        "kwName": "Set Value",
+                        "numberGenerator": "java.util.Random@2d25e824",
+                        "inverse": false,
+                        "os": "null",
+                        "kwImpl": "org.xframium.page.keyWord.step.spi.KWSSet",
+                        "kw": "SET",
+                        "breakpoint": false,
+                        "fork": false,
+                        "linkId": "null",
+                        "allowMultiple": false,
+                        "dataTable": "null",
+                        "appContext": "null",
+                        "category": "Interaction",
+                        "orMapping": true,
+                        "waitTime": "0"
+                    },
+                    "startTime": {
+                        "dateTime": "09/02/2019-18:17:39",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:39",
+                        "raw": 1567444659365
+                    },
+                    "endTime": {
+                        "dateTime": "09/02/2019-18:17:39",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:39",
+                        "raw": 1567444659556
+                    },
+                    "stepList": [],
+                    "message": "null",
+                    "timingMap": {},
+                    "stepStatus": "SUCCESS"
+                },
+                {
+                    "locatorResult": [{
+                        "success": true,
+                        "time": "23",
+                        "locator": "By.xpath: //button[@class='btn btn-lg btn-block btn-flat login-button']"
+                    }],
+                    "throwable": "null",
+                    "executionParameter": {},
+                    "parameterList": [],
+                    "customMessage": "null",
+                    "step": {
+                        "deviceTags": "null",
+                        "kwDescription": "Allows the script to click on the center of the named element",
+                        "validationType": "null",
+                        "kwHelp": "https://www.xframium.org/keyword.html#kw-click",
+                        "threshold": "0",
+                        "sFailure": "ERROR",
+                        "pageName": "CSLoginPage",
+                        "context": "null",
+                        "TOKEN_REGEX": "\\{([^\\}]*)\\}",
+                        "waitFor": "null",
+                        "validation": "null",
+                        "reportingTokens": [],
+                        "image": "null",
+                        "timed": false,
+                        "active": true,
+                        "stepList": [],
+                        "version": "null",
+                        "DATA_PATTERN": "data\\{(\\w*)\\}",
+                        "name": "Signin_btn",
+                        "parameterList": [],
+                        "device": "null",
+                        "successReport": "null",
+                        "failureReport": "null",
+                        "natualLanguage": "null",
+                        "log": "org.apache.commons.logging.impl.Jdk14Logger@755d77fb",
+                        "siteName": "null",
+                        "description": "",
+                        "poi": "null",
+                        "tagNames": "null",
+                        "trace": false,
+                        "numberFormat": "java.text.DecimalFormat@674dc",
+                        "browser": "null",
+                        "tokenList": [],
+                        "featureId": "13",
+                        "startAt": false,
+                        "kwName": "Click",
+                        "numberGenerator": "java.util.Random@2d25e824",
+                        "inverse": false,
+                        "os": "null",
+                        "kwImpl": "org.xframium.page.keyWord.step.spi.KWSClick",
+                        "kw": "CLICK",
+                        "breakpoint": false,
+                        "fork": false,
+                        "linkId": "null",
+                        "allowMultiple": false,
+                        "dataTable": "null",
+                        "appContext": "null",
+                        "category": "Interaction",
+                        "orMapping": true,
+                        "waitTime": "0"
+                    },
+                    "startTime": {
+                        "dateTime": "09/02/2019-18:17:39",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:39",
+                        "raw": 1567444659556
+                    },
+                    "endTime": {
+                        "dateTime": "09/02/2019-18:17:44",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:44",
+                        "raw": 1567444664255
+                    },
+                    "stepList": [],
+                    "message": "null",
+                    "timingMap": {},
+                    "stepStatus": "SUCCESS"
+                },
+                {
+                    "locatorResult": "null",
+                    "throwable": "null",
+                    "executionParameter": {},
+                    "parameterList": [],
+                    "customMessage": "null",
+                    "step": {
+                        "deviceTags": "null",
+                        "kwDescription": "null",
+                        "validationType": "null",
+                        "kwHelp": "null",
+                        "threshold": "0",
+                        "sFailure": "null",
+                        "pageName": "null",
+                        "context": "null",
+                        "TOKEN_REGEX": "\\{([^\\}]*)\\}",
+                        "waitFor": "null",
+                        "validation": "null",
+                        "reportingTokens": [],
+                        "image": "null",
+                        "timed": false,
+                        "active": false,
+                        "stepList": [],
+                        "version": "null",
+                        "DATA_PATTERN": "data\\{(\\w*)\\}",
+                        "name": "Return from Login_Function",
+                        "parameterList": [],
+                        "device": "null",
+                        "successReport": "null",
+                        "failureReport": "null",
+                        "natualLanguage": "null",
+                        "log": "org.apache.commons.logging.impl.Jdk14Logger@755d77fb",
+                        "siteName": "null",
+                        "description": "Return from Login_Function",
+                        "poi": "null",
+                        "tagNames": "null",
+                        "trace": false,
+                        "numberFormat": "java.text.DecimalFormat@674dc",
+                        "browser": "null",
+                        "tokenList": [],
+                        "featureId": "0",
+                        "startAt": false,
+                        "kwName": "N/A",
+                        "numberGenerator": "java.util.Random@2d25e824",
+                        "inverse": false,
+                        "os": "null",
+                        "kwImpl": "org.xframium.page.keyWord.step.SyntheticStep",
+                        "kw": "CALLBACK",
+                        "breakpoint": false,
+                        "fork": false,
+                        "linkId": "null",
+                        "allowMultiple": false,
+                        "dataTable": "null",
+                        "appContext": "null",
+                        "category": "Other",
+                        "orMapping": false,
+                        "waitTime": "0"
+                    },
+                    "startTime": {
+                        "dateTime": "09/02/2019-18:17:44",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:44",
+                        "raw": 1567444664256
+                    },
+                    "endTime": {
+                        "dateTime": "09/02/2019-18:17:44",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:44",
+                        "raw": 1567444664256
+                    },
+                    "stepList": [],
+                    "message": "null",
+                    "timingMap": {},
+                    "stepStatus": "SUCCESS"
+                }
+            ],
+            "message": "null",
+            "timingMap": {},
+            "stepStatus": "SUCCESS"
+        },
+        {
+            "locatorResult": "null",
+            "throwable": "null",
+            "executionParameter": {},
+            "parameterList": [],
+            "customMessage": "null",
+            "step": {
+                "deviceTags": "null",
+                "kwDescription": "Allows the script to call another pre-defined function or test.  You can pass named context parameters that are scoped to the =function call by adding parameters with names and values.  OVERRIDE is the only reserved name using for overriding data provider names",
+                "validationType": "null",
+                "kwHelp": "https://www.xframium.org/keyword.html#kw-call",
+                "threshold": "0",
+                "sFailure": "ERROR",
+                "pageName": "null",
+                "context": "null",
+                "TOKEN_REGEX": "\\{([^\\}]*)\\}",
+                "waitFor": "null",
+                "validation": "null",
+                "reportingTokens": [],
+                "image": "null",
+                "timed": false,
+                "active": true,
+                "stepList": [],
+                "version": "null",
+                "DATA_PATTERN": "data\\{(\\w*)\\}",
+                "name": "Logout_Function",
+                "parameterList": [],
+                "device": "null",
+                "successReport": "null",
+                "failureReport": "null",
+                "natualLanguage": "null",
+                "log": "org.apache.commons.logging.impl.Jdk14Logger@755d77fb",
+                "siteName": "null",
+                "description": "",
+                "poi": "null",
+                "tagNames": "null",
+                "trace": false,
+                "numberFormat": "java.text.DecimalFormat@674dc",
+                "browser": "null",
+                "tokenList": [],
+                "featureId": "11",
+                "startAt": false,
+                "kwName": "Call Test/Function",
+                "numberGenerator": "java.util.Random@2d25e824",
+                "inverse": false,
+                "os": "null",
+                "kwImpl": "org.xframium.page.keyWord.step.spi.KWSCall2",
+                "kw": "CALL2",
+                "breakpoint": false,
+                "fork": false,
+                "linkId": "null",
+                "allowMultiple": false,
+                "dataTable": "null",
+                "appContext": "null",
+                "category": "Flow Control",
+                "orMapping": false,
+                "waitTime": "0"
+            },
+            "startTime": {
+                "dateTime": "09/02/2019-18:17:44",
+                "dateOnly": "09/02/2019",
+                "timeOnly": "18:17:44",
+                "raw": 1567444664256
+            },
+            "endTime": {
+                "dateTime": "09/02/2019-18:17:46",
+                "dateOnly": "09/02/2019",
+                "timeOnly": "18:17:46",
+                "raw": 1567444666531
+            },
+            "stepList": [
+                {
+                    "locatorResult": [{
+                        "success": true,
+                        "time": "33",
+                        "locator": "By.xpath: (//span[contains(text(),'Mr. admin')])[1]"
+                    }],
+                    "throwable": "null",
+                    "executionParameter": {},
+                    "parameterList": ["45"],
+                    "customMessage": "null",
+                    "step": {
+                        "deviceTags": "null",
+                        "kwDescription": "Allows the script to wait for an element to be exist in a certain state",
+                        "validationType": "null",
+                        "kwHelp": "https://www.xframium.org/keyword.html#kw-waitfor",
+                        "threshold": "0",
+                        "sFailure": "ERROR",
+                        "pageName": "CSHomePage",
+                        "context": "null",
+                        "TOKEN_REGEX": "\\{([^\\}]*)\\}",
+                        "waitFor": "null",
+                        "validation": "null",
+                        "reportingTokens": [],
+                        "image": "null",
+                        "timed": false,
+                        "active": true,
+                        "stepList": [],
+                        "version": "null",
+                        "DATA_PATTERN": "data\\{(\\w*)\\}",
+                        "name": "MrAdmin_topnav.CLICKABLE",
+                        "parameterList": [{
+                            "fileName": "null",
+                            "usage": "null",
+                            "name": "null",
+                            "type": "STATIC",
+                            "tokenList": [],
+                            "value": "45"
+                        }],
+                        "device": "null",
+                        "successReport": "null",
+                        "failureReport": "null",
+                        "natualLanguage": "null",
+                        "log": "org.apache.commons.logging.impl.Jdk14Logger@755d77fb",
+                        "siteName": "null",
+                        "description": "",
+                        "poi": "null",
+                        "tagNames": "null",
+                        "trace": false,
+                        "numberFormat": "java.text.DecimalFormat@674dc",
+                        "browser": "null",
+                        "tokenList": [],
+                        "featureId": "55",
+                        "startAt": false,
+                        "kwName": "Wait for element",
+                        "numberGenerator": "java.util.Random@2d25e824",
+                        "inverse": false,
+                        "os": "null",
+                        "kwImpl": "org.xframium.page.keyWord.step.spi.KWSWaitFor",
+                        "kw": "WAIT_FOR",
+                        "breakpoint": false,
+                        "fork": false,
+                        "linkId": "null",
+                        "allowMultiple": false,
+                        "dataTable": "null",
+                        "appContext": "null",
+                        "category": "Verification",
+                        "orMapping": true,
+                        "waitTime": "0"
+                    },
+                    "startTime": {
+                        "dateTime": "09/02/2019-18:17:44",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:44",
+                        "raw": 1567444664257
+                    },
+                    "endTime": {
+                        "dateTime": "09/02/2019-18:17:44",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:44",
+                        "raw": 1567444664358
+                    },
+                    "stepList": [],
+                    "message": "null",
+                    "timingMap": {},
+                    "stepStatus": "SUCCESS"
+                },
+                {
+                    "locatorResult": [{
+                        "success": true,
+                        "time": "35",
+                        "locator": "By.xpath: (//span[contains(text(),'Mr. admin')])[1]"
+                    }],
+                    "throwable": "null",
+                    "executionParameter": {},
+                    "parameterList": [],
+                    "customMessage": "null",
+                    "step": {
+                        "deviceTags": "null",
+                        "kwDescription": "Allows the script to click on the center of the named element",
+                        "validationType": "null",
+                        "kwHelp": "https://www.xframium.org/keyword.html#kw-click",
+                        "threshold": "0",
+                        "sFailure": "ERROR",
+                        "pageName": "CSHomePage",
+                        "context": "null",
+                        "TOKEN_REGEX": "\\{([^\\}]*)\\}",
+                        "waitFor": "null",
+                        "validation": "null",
+                        "reportingTokens": [],
+                        "image": "null",
+                        "timed": false,
+                        "active": true,
+                        "stepList": [],
+                        "version": "null",
+                        "DATA_PATTERN": "data\\{(\\w*)\\}",
+                        "name": "MrAdmin_topnav",
+                        "parameterList": [],
+                        "device": "null",
+                        "successReport": "null",
+                        "failureReport": "null",
+                        "natualLanguage": "null",
+                        "log": "org.apache.commons.logging.impl.Jdk14Logger@755d77fb",
+                        "siteName": "null",
+                        "description": "",
+                        "poi": "null",
+                        "tagNames": "null",
+                        "trace": false,
+                        "numberFormat": "java.text.DecimalFormat@674dc",
+                        "browser": "null",
+                        "tokenList": [],
+                        "featureId": "13",
+                        "startAt": false,
+                        "kwName": "Click",
+                        "numberGenerator": "java.util.Random@2d25e824",
+                        "inverse": false,
+                        "os": "null",
+                        "kwImpl": "org.xframium.page.keyWord.step.spi.KWSClick",
+                        "kw": "CLICK",
+                        "breakpoint": false,
+                        "fork": false,
+                        "linkId": "null",
+                        "allowMultiple": false,
+                        "dataTable": "null",
+                        "appContext": "null",
+                        "category": "Interaction",
+                        "orMapping": true,
+                        "waitTime": "0"
+                    },
+                    "startTime": {
+                        "dateTime": "09/02/2019-18:17:44",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:44",
+                        "raw": 1567444664358
+                    },
+                    "endTime": {
+                        "dateTime": "09/02/2019-18:17:44",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:44",
+                        "raw": 1567444664781
+                    },
+                    "stepList": [],
+                    "message": "null",
+                    "timingMap": {},
+                    "stepStatus": "SUCCESS"
+                },
+                {
+                    "locatorResult": [{
+                        "success": true,
+                        "time": "30",
+                        "locator": "By.xpath: //li[contains(@class,'user-footer')]//div[1]//a[1]//div[1]"
+                    }],
+                    "throwable": "null",
+                    "executionParameter": {},
+                    "parameterList": ["45"],
+                    "customMessage": "null",
+                    "step": {
+                        "deviceTags": "null",
+                        "kwDescription": "Allows the script to wait for an element to be exist in a certain state",
+                        "validationType": "null",
+                        "kwHelp": "https://www.xframium.org/keyword.html#kw-waitfor",
+                        "threshold": "0",
+                        "sFailure": "ERROR",
+                        "pageName": "CSHomePage",
+                        "context": "null",
+                        "TOKEN_REGEX": "\\{([^\\}]*)\\}",
+                        "waitFor": "null",
+                        "validation": "null",
+                        "reportingTokens": [],
+                        "image": "null",
+                        "timed": false,
+                        "active": true,
+                        "stepList": [],
+                        "version": "null",
+                        "DATA_PATTERN": "data\\{(\\w*)\\}",
+                        "name": "Logout_link.CLICKABLE",
+                        "parameterList": [{
+                            "fileName": "null",
+                            "usage": "null",
+                            "name": "null",
+                            "type": "STATIC",
+                            "tokenList": [],
+                            "value": "45"
+                        }],
+                        "device": "null",
+                        "successReport": "null",
+                        "failureReport": "null",
+                        "natualLanguage": "null",
+                        "log": "org.apache.commons.logging.impl.Jdk14Logger@755d77fb",
+                        "siteName": "null",
+                        "description": "",
+                        "poi": "null",
+                        "tagNames": "null",
+                        "trace": false,
+                        "numberFormat": "java.text.DecimalFormat@674dc",
+                        "browser": "null",
+                        "tokenList": [],
+                        "featureId": "55",
+                        "startAt": false,
+                        "kwName": "Wait for element",
+                        "numberGenerator": "java.util.Random@2d25e824",
+                        "inverse": false,
+                        "os": "null",
+                        "kwImpl": "org.xframium.page.keyWord.step.spi.KWSWaitFor",
+                        "kw": "WAIT_FOR",
+                        "breakpoint": false,
+                        "fork": false,
+                        "linkId": "null",
+                        "allowMultiple": false,
+                        "dataTable": "null",
+                        "appContext": "null",
+                        "category": "Verification",
+                        "orMapping": true,
+                        "waitTime": "0"
+                    },
+                    "startTime": {
+                        "dateTime": "09/02/2019-18:17:44",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:44",
+                        "raw": 1567444664781
+                    },
+                    "endTime": {
+                        "dateTime": "09/02/2019-18:17:44",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:44",
+                        "raw": 1567444664870
+                    },
+                    "stepList": [],
+                    "message": "null",
+                    "timingMap": {},
+                    "stepStatus": "SUCCESS"
+                },
+                {
+                    "locatorResult": [{
+                        "success": true,
+                        "time": "20",
+                        "locator": "By.xpath: //li[contains(@class,'user-footer')]//div[1]//a[1]//div[1]"
+                    }],
+                    "throwable": "null",
+                    "executionParameter": {},
+                    "parameterList": [],
+                    "customMessage": "null",
+                    "step": {
+                        "deviceTags": "null",
+                        "kwDescription": "Allows the script to click on the center of the named element",
+                        "validationType": "null",
+                        "kwHelp": "https://www.xframium.org/keyword.html#kw-click",
+                        "threshold": "0",
+                        "sFailure": "ERROR",
+                        "pageName": "CSHomePage",
+                        "context": "null",
+                        "TOKEN_REGEX": "\\{([^\\}]*)\\}",
+                        "waitFor": "null",
+                        "validation": "null",
+                        "reportingTokens": [],
+                        "image": "null",
+                        "timed": false,
+                        "active": true,
+                        "stepList": [],
+                        "version": "null",
+                        "DATA_PATTERN": "data\\{(\\w*)\\}",
+                        "name": "Logout_link",
+                        "parameterList": [],
+                        "device": "null",
+                        "successReport": "null",
+                        "failureReport": "null",
+                        "natualLanguage": "null",
+                        "log": "org.apache.commons.logging.impl.Jdk14Logger@755d77fb",
+                        "siteName": "null",
+                        "description": "",
+                        "poi": "null",
+                        "tagNames": "null",
+                        "trace": false,
+                        "numberFormat": "java.text.DecimalFormat@674dc",
+                        "browser": "null",
+                        "tokenList": [],
+                        "featureId": "13",
+                        "startAt": false,
+                        "kwName": "Click",
+                        "numberGenerator": "java.util.Random@2d25e824",
+                        "inverse": false,
+                        "os": "null",
+                        "kwImpl": "org.xframium.page.keyWord.step.spi.KWSClick",
+                        "kw": "CLICK",
+                        "breakpoint": false,
+                        "fork": false,
+                        "linkId": "null",
+                        "allowMultiple": false,
+                        "dataTable": "null",
+                        "appContext": "null",
+                        "category": "Interaction",
+                        "orMapping": true,
+                        "waitTime": "0"
+                    },
+                    "startTime": {
+                        "dateTime": "09/02/2019-18:17:44",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:44",
+                        "raw": 1567444664870
+                    },
+                    "endTime": {
+                        "dateTime": "09/02/2019-18:17:46",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:46",
+                        "raw": 1567444666531
+                    },
+                    "stepList": [],
+                    "message": "null",
+                    "timingMap": {},
+                    "stepStatus": "SUCCESS"
+                },
+                {
+                    "locatorResult": "null",
+                    "throwable": "null",
+                    "executionParameter": {},
+                    "parameterList": [],
+                    "customMessage": "null",
+                    "step": {
+                        "deviceTags": "null",
+                        "kwDescription": "null",
+                        "validationType": "null",
+                        "kwHelp": "null",
+                        "threshold": "0",
+                        "sFailure": "null",
+                        "pageName": "null",
+                        "context": "null",
+                        "TOKEN_REGEX": "\\{([^\\}]*)\\}",
+                        "waitFor": "null",
+                        "validation": "null",
+                        "reportingTokens": [],
+                        "image": "null",
+                        "timed": false,
+                        "active": false,
+                        "stepList": [],
+                        "version": "null",
+                        "DATA_PATTERN": "data\\{(\\w*)\\}",
+                        "name": "Return from Logout_Function",
+                        "parameterList": [],
+                        "device": "null",
+                        "successReport": "null",
+                        "failureReport": "null",
+                        "natualLanguage": "null",
+                        "log": "org.apache.commons.logging.impl.Jdk14Logger@755d77fb",
+                        "siteName": "null",
+                        "description": "Return from Logout_Function",
+                        "poi": "null",
+                        "tagNames": "null",
+                        "trace": false,
+                        "numberFormat": "java.text.DecimalFormat@674dc",
+                        "browser": "null",
+                        "tokenList": [],
+                        "featureId": "0",
+                        "startAt": false,
+                        "kwName": "N/A",
+                        "numberGenerator": "java.util.Random@2d25e824",
+                        "inverse": false,
+                        "os": "null",
+                        "kwImpl": "org.xframium.page.keyWord.step.SyntheticStep",
+                        "kw": "CALLBACK",
+                        "breakpoint": false,
+                        "fork": false,
+                        "linkId": "null",
+                        "allowMultiple": false,
+                        "dataTable": "null",
+                        "appContext": "null",
+                        "category": "Other",
+                        "orMapping": false,
+                        "waitTime": "0"
+                    },
+                    "startTime": {
+                        "dateTime": "09/02/2019-18:17:46",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:46",
+                        "raw": 1567444666531
+                    },
+                    "endTime": {
+                        "dateTime": "09/02/2019-18:17:46",
+                        "dateOnly": "09/02/2019",
+                        "timeOnly": "18:17:46",
+                        "raw": 1567444666531
+                    },
+                    "stepList": [],
+                    "message": "null",
+                    "timingMap": {},
+                    "stepStatus": "SUCCESS"
+                }
+            ],
+            "message": "null",
+            "timingMap": {},
+            "stepStatus": "SUCCESS"
+        }
+    ],
+    "sessionId": "dc6b4d94-4e51-49e9-a836-4db54633b896",
+    "message": "null",
+    "callMap": {},
+    "currentStep": "null",
+    "featureList": [
+        "11",
+        "9",
+        "55",
+        "55",
+        "45",
+        "45",
+        "13",
+        "11",
+        "55",
+        "13",
+        "55",
+        "13"
+    ],
+    "endTime": {
+        "dateTime": "09/02/2019-18:17:46",
+        "dateOnly": "09/02/2019",
+        "timeOnly": "18:17:46",
+        "raw": 1567444666532
+    },
+    "folderName": "Windows chrome\\TC01_ValidLogin",
+    "cloudDescriptor": {
+        "hostName": "127.0.0.1:4444",
+        "proxyPort": "null",
+        "password": "",
+        "keepAlive": "null",
+        "deviceAction": "null",
+        "provider": "SELENIUM",
+        "gridInstance": "null",
+        "name": "local",
+        "description": "",
+        "userName": "",
+        "proxyHost": "null",
+        "gesture": "null"
+    },
+    "contextMap": {
+        "_device.browserVersion": "null",
+        "_device.phoneNumber": "null",
+        "_device.environment": "WINDOWS 10 Chrome",
+        "_device.name": "Chrome",
+        "_device.cloud": "local",
+        "_device.manufacturer": "Microsoft Corporation",
+        "_device.osVersion": "10",
+        "_device.resolution": "1050 x 708",
+        "_device.model": "null",
+        "_device.browserName": "Chrome",
+        "XF_TEST_STATUS": "PASSED",
+        "_device.os": "WINDOWS"
+    },
+    "device": {
+        "capabilities": {},
+        "os": "WINDOWS",
+        "active": false,
+        "deviceLock": "java.util.concurrent.Semaphore@7f0e67c1[Permits = 1]",
+        "deviceName": "Chrome",
+        "resolution": "1050 x 708",
+        "capList": [],
+        "driverType": "WEB",
+        "tagNames": [],
+        "manufacturer": "Microsoft Corporation",
+        "cloud": "local",
+        "environment": "WINDOWS 10 Chrome",
+        "phoneNumber": "null",
+        "osVersion": "10",
+        "browserVersion": "null",
+        "availableDevices": "1",
+        "browserName": "Chrome",
+        "model": "null",
+        "cachedString": "null",
+        "key": "Chrome"
+    },
+    "messageDetail": "null"
+}};</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link href="http://xframium.org/reporting/1.0.20/toolkit-inverse.css" rel="stylesheet">
+<link href="http://xframium.org/reporting/1.0.20/application.css" rel="stylesheet">
+<link href="http://xframium.org/reporting/1.0.20/angular-ui-tree.css" rel="stylesheet">
+<style>
+iframe {
+	background-color: #eaeae1;
+}
+
+.scrollable {
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.list-group-item {
+	padding-top: 5px;
+	padding-bottom: 5px
+}
+
+.panel-heading {
+	padding: 8px
+}
+
+.list-group {
+	margin-bottom: 0px
+}
+
+.filteredStep {
+	text-decoration: line-through;
+}
+</style>
+</head>
+<body ng-controller="xTestController" data-ng-init="initialize()" ng-cloak style="padding-top: 10px">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 content">
+        <div class="dashhead">
+          <div class="row">
+            <div class="col-sm-4 text-left">xFramium 1.0.20 (Paean)</div>
+            <div class="col-sm-4 text-center">
+              <img src="http://xframium.org/partner/mll.png" height="32" />
+            </div>
+            <div class="col-sm-4 text-right">
+              <span class="text-muted"> Started {{testData.startTime.dateOnly}} at {{testData.startTime.timeOnly}} and ran for <b>{{formattedDuration}}</b>
+              </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 text-left">
+              <h3>
+                {{testData.test.name}}<span class="glyphicon glyphicon-ok" ng-class="{'glyphicon-ok text-success': testData.testStatus=='PASSED', 'glyphicon-remove text-danger': testData.testStatus!='PASSED' }" style="margin-left: 15px"></span>
+              </h3>
+              <sup style="margin-left: 5px" ng-if="testData.iterationCount > 0">x {{(+testData.iterationCount+1)}}</sup>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom: 10px">
+            <div class="col-sm-6 text-left">{{testData.device.environment}} on {{testData.cloudDescriptor.hostName}} ({{testData.cloudDescriptor.provider.name}})</div>
+            <div class="col-sm-6 text-right">
+              <a hRef="#" class="pull-right" style="margin-right: 10px"><span>Test Suite Execution Detail</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="max-height: 100%">
+      <div class="col-sm-6 col-md-5 col-lg-4">
+        <div class="scrollable panel panel-primary" style="margin-bottom: 0px; margin-top: 5px;">
+          <div class="panel-heading">
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon2">Test Details</span> <input type="text" class="form-control" placeholder="Step Filter" aria-describedby="basic-addon2" ng-model="filterBy"> <span class="input-group-addon" id="basic-addon2" style="padding-left: 3px; padding-right: 3px"><a hRef="#" class="glyphicon glyphicon-eye-close text-info" ng-click="filterBy=''" uib-tooltip="Clear Filter"></a></span> <span class="input-group-addon" id="basic-addon2"
+                style="padding-left: 3px; padding-right: 3px"><a hRef="#" class="glyphicon glyphicon-ok text-success" ng-click="filterBy='SUCCESS'" uib-tooltip="Successful Steps"></a></span> <span class="input-group-addon" id="basic-addon2" style="padding-left: 3px; padding-right: 3px"><a hRef="#" class="glyphicon glyphicon-warning-sign text-warning" ng-click="filterBy='IGNORED'" uib-tooltip="Ignored Steps"></a></span> <span class="input-group-addon" id="basic-addon2"
+                style="padding-left: 3px; padding-right: 3px"><a hRef="#" class="glyphicon glyphicon-remove text-danger" ng-click="filterBy='FAILURE'" uib-tooltip="Failed Steps"></a></span>
+            </div>
+          </div>
+          <div data-drag-enabled="false" ui-tree id="tree-root" class="panel-body" style="padding-left: 5px;">
+            <ol style="cursor: default" ui-tree-nodes ng-model="rootTree">
+              <li ui-tree-node style="cursor: default" ng-repeat="rootNode in rootTree" collapsed="rootNode == 'Steps' ? false : true">
+                <div style="cursor: default" ui-tree-handle class="tree-node tree-node-content">
+                  <a style="cursor: default" ng-click="toggle(this)" ng-if="rootNode != 'Environment' && rootNode != 'Performance' && rootNode != 'Imaging Analysis'"> <span class="glyphicon text-default" ng-class="{'glyphicon-chevron-right': collapsed, 'glyphicon-chevron-down': !collapsed }" style="margin-right: 3px; font-size: x-small;"></span>
+                  </a> <span style="cursor: default; margin-left: 5px" ng-if="rootNode != 'Environment' && rootNode != 'Performance' && rootNode != 'Imaging Analysis'">{{rootNode}}</span> <a style="cursor: default; margin-left: 23px" ng-click="selectElement( 'Environment', null )" ng-if="rootNode == 'Environment'">{{rootNode}}</a> <a style="cursor: default; margin-left: 23px" ng-click="selectElement( 'Performance', null )" ng-if="rootNode == 'Performance'">{{rootNode}}</a> <a
+                    style="cursor: default; margin-left: 23px" ng-click="selectElement( 'Imaging Analysis', null )" ng-if="rootNode == 'Imaging Analysis'">{{rootNode}}</a>
+                </div>
+                <ol ui-tree-nodes ng-model="testData.stepList" ng-class="{hidden: collapsed}" ng-if="rootNode == 'Steps'">
+                  <li ui-tree-node ng-repeat="stepDef in testData.stepList | filter:filterBy" ng-include="'step.html'" collapsed="true"></li>
+                </ol>
+                <ol ui-tree-nodes ng-model="links" ng-if="rootNode == 'Logs'" ng-class="{hidden: collapsed}" style="cursor: default; font-size: 8pt">
+                  <li ui-tree-node collapsed="true" ng-repeat="log in logTypes">
+                    <div data-nodrag ui-tree-handle class="tree-node tree-node-content" style="cursor: default" collapsed="true">
+                      <img src="http://xframium.org/reporting/1.0.20/referenceIcon.png" width="16" style="margin-right: 2px" /> <a hRef="#" ng-click="selectElement( log + ' Log', null )" style="margin-left: 15px" class="text-primary"> <span data-nodrag style="cursor: default;">{{log}}</span>
+                      </a>
+                    </div>
+                  </li>
+                </ol>
+                <ol ui-tree-nodes ng-model="links" ng-class="{hidden: collapsed}" ng-if="rootNode == 'Links'" style="cursor: default; font-size: 8pt">
+                  <li ui-tree-node ng-repeat="(key, value) in links" ng-if="testData.executionParameters[ key ] != null">
+                    <div data-nodrag ui-tree-handle class="tree-node tree-node-content linkStep" style="cursor: default;">
+                      <img src="http://xframium.org/reporting/1.0.20/LINK_TEXT.png" width="16" style="margin-right: 2px" /> <a ng-if="testData.executionParameters[ key + '_FILE' ] != null" target="_blank" hRef="{{testData.executionParameters[ key + '_FILE' ]}}" style="margin-left: 15px" class="text-primary"> <span data-nodrag style="cursor: default;">{{value}}</span>
+                      </a> <a ng-if="testData.executionParameters[ key + '_FILE' ] == null" target="_blank" hRef="{{testData.executionParameters[ key ]}}" style="margin-left: 15px" class="text-primary"> <span data-nodrag style="cursor: default;">{{value}}</span>
+                      </a>
+                    </div>
+                  </li>
+                </ol>
+                <ol ui-tree-nodes ng-model="links" ng-if="rootNode == 'Data'" ng-class="{hidden: collapsed}">
+                  <li ui-tree-node ng-repeat="(key,value) in testData.dataMap" collapsed="true">
+                    <div data-nodrag ui-tree-handle class="tree-node tree-node-content linkStep" style="cursor: default; font-size: 8pt">
+                      <img src="http://xframium.org/reporting/1.0.20/databaseIcon.png" width="16" style="margin-right: 2px" /> <a ng-if="!angular.equals( {}, value.recordMap )" data-nodrag ng-click="toggle(this)" style="cursor: default"> <span class="glyphicon" ng-class="{'glyphicon-chevron-right': collapsed, 'glyphicon-chevron-down': !collapsed }" style="cursor: default"></span>
+                      </a> <span data-nodrag style="cursor: default;"> {{value.recordName}} <span style="font-weight: normal;">extracted from</span> {{key}}
+                      </span>
+                    </div>
+                    <ol data-nodrag ui-tree-nodes="" ng-model="value.recordMap" ng-if="!angular.equals( {}, value.recordMap )" ng-class="{hidden: collapsed}">
+                      <li data-nodrag ui-tree-node ng-repeat="(key2, value2) in value.recordMap" style="cursor: default; font-size: 8pt">
+                        <div data-nodrag ui-tree-handle class="tree-node tree-node-content" style="cursor: default; margin-left: 15px">
+                          <img src="http://xframium.org/reporting/1.0.20/fieldTitleIcon.png" width="16" style="margin-right: 2px" /> <span data-nodrag style="cursor: default;">{{key2}}</span> <span style="font-weight: normal;"> = </span> <span data-nodrag style="cursor: default;">{{value2}}</span>
+                        </div>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+                <ol ui-tree-nodes ng-model="links" ng-if="rootNode == 'Capabilities'" ng-class="{hidden: collapsed}" style="cursor: default; font-size: 8pt">
+                  <li ui-tree-node ng-repeat="cap in capTypes" collapsed="true">
+                    <div data-nodrag ui-tree-handle class="tree-node tree-node-content" style="cursor: default">
+                      <img src="http://xframium.org/reporting/1.0.20/testIcon.png" width="16" style="margin-right: 2px" /> <a hRef="#" ng-click="selectElement( cap + ' Capabilities', null )" data-nodrag style="cursor: default; margin-left: 15px">{{cap}}</a>
+                    </div>
+                  </li>
+                </ol>
+                <ol ui-tree-nodes ng-model="links" ng-if="rootNode == 'Environment'" ng-class="{hidden: collapsed}" style="cursor: default; font-size: 8pt" ng-model="testData.sPMap">
+                  <li ui-tree-node ng-repeat="(key,value) in testData.sPMap">
+                    <div data-nodrag ui-tree-handle class="tree-node tree-node-content linkStep" style="cursor: default">
+                      <img src="http://xframium.org/reporting/1.0.20/env.png" width="16" style="margin-right: 2px" /> <span data-nodrag style="cursor: default;">{{key}} = {{value}}</span>
+                    </div>
+                  </li>
+                </ol>
+                <ol ui-tree-nodes ng-model="links" ng-if="rootNode == 'Pages'" ng-class="{hidden: collapsed}" style="cursor: default; font-size: 8pt">
+                  <li ui-tree-node ng-repeat="(key,value) in testData.pageMap">
+                    <div data-nodrag ui-tree-handle class="tree-node tree-node-content" style="cursor: default">
+                      <img src="http://xframium.org/reporting/1.0.20/pageIcon.png" width="16" style="margin-right: 2px" /> <span data-nodrag style="margin-left: 15px">{{key}}</span>
+                    </div>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-7 col-lg-8 content">
+        <div class="panel panel-{{selectedState}}" style="margin-bottom: 0px; margin-top: 5px">
+          <div class="panel-heading">
+            <h3 class="panel-title" style="color: {{selectedState== 'primary'? 'white': 'black'">{{selectedContext}}</h3>
+          </div>
+          <div class="panel-body">
+            <iframe ng-if="selectedContext=='Device Log'" src="{{testData.executionParameters[ 'DEVICE_LOG_FILE' ]}}" frameborder="0" height="1024" width="100%"></iframe>
+            <iframe ng-if="selectedContext=='Console Log'" src="{{testData.executionParameters[ 'CONSOLE_LOG_FILE' ]}}" frameborder="0" height="1024" width="100%"></iframe>
+            <iframe ng-if="selectedContext=='Performance'" src="{{testData.executionParameters[ 'TIMING_HTML_FILE' ] == null ? 'http://xframium.org/reporting/1.0.20/perf.html' : testData.executionParameters[ 'TIMING_HTML_FILE' ]}}" frameborder="0" height="1024" width="100%"></iframe>
+            <span ng-if="selectedContext=='Derived Capabilities'">
+              <ol class="list-group">
+                <li class="list-group-item" ng-repeat="(key,value) in testData.dC"><b>{{key}}: </b> {{value}}</li>
+              </ol>
+            </span> <span ng-if="selectedContext=='Supplied Capabilities'">
+              <ol class="list-group">
+                <li class="list-group-item" ng-repeat="(key,value) in testData.c"><b>{{key}}: </b> {{value}}</li>
+              </ol>
+            </span> <span ng-if="selectedContext=='Environment'">
+              <ol class="list-group">
+                <li class="list-group-item" ng-repeat="(key,value) in testData.sPMap"><b>{{key}}: </b> {{value}}</li>
+              </ol>
+            </span> <span ng-if="selectedContext=='Step'">
+              <div class="row">
+                <div class="col-sm-12">
+                  <a hRef="{{selectedElement.step.kwHelp}}" target="_blank"> <b>{{selectedElement.step.kw}}</b>
+                  </a> <span class="pull-right">{{selectedElement.step.category}}</span>
+                </div>
+                <div class="col-sm-12" style="margin-left: 15px; margin-bottom: 10px">
+                  <i>{{selectedElement.step.kwDescription}}</i>
+                </div>
+              </div>
+              <div class="row" ng-if="selectedElement.message != null && selectedElement.message != '' && selectedElement.message != 'null'">
+                <div class="col-sm-12">
+                  <div class="alert alert-{{selectedState}}" style="color: black">
+                    <span ng-if="selectedElement.step.kw=='ACCESSIBILITY'">
+                      <div class="panel panel-info" style="margin-bottom: 0px; margin-top: 5px" ng-repeat="a in selectedElement.accessibility">
+                        <div class="panel-heading">
+                          <h3 class="panel-title" style="color: black">
+                            <a hRef="{{a.helpUrl}}" target="_blank">{{a.description}}</a> ({{a.nodes.length}})
+                          </h3>
+                        </div>
+                        <div class="panel-body">
+                          <ul class="list-group">
+                            <li class="list-group-item" ng-repeat="n in a.nodes"><code>{{n.html}}</code></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </span> <span ng-if="selectedElement.step.kw!='ACCESSIBILITY'">{{selectedElement.message}}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-{{selectedElement.executionParameter.SCREENSHOT == null ? 12 : 6}}">
+                  <div class="panel panel-info" style="margin-bottom: 0px; margin-top: 5px" ng-if="selectedElement.step.kw=='REPORT'">
+                    <div class="panel-body">
+                      <ul class="list-group">
+                        <li class="list-group-item" ng-repeat="p in selectedElement.parameterList">{{p}}</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="panel panel-info" style="margin-bottom: 0px; margin-top: 5px">
+                    <div class="panel-heading">
+                      <h3 class="panel-title" style="color: black">Step Information</h3>
+                    </div>
+                    <div class="panel-body">
+                      <div ng-if="selectedElement.step.description != 'null' && selectedElement.step.description != ''"></div>
+                      <ul class="list-group">
+                        <li class="list-group-item" ng-if="selectedElement.step.orMapping==true && selectedElement.step.siteName != 'null' && selectedElement.step.siteName != null">Site Name: <b>{{selectedElement.step.siteName}}</b>
+                        </li>
+                        <li class="list-group-item" ng-if="selectedElement.step.orMapping==true && selectedElement.step.pageName != 'null' && selectedElement.step.pageName != null">Page Name: <b>{{selectedElement.step.pageName}}</b>
+                        </li>
+                        <li class="list-group-item" ng-if="selectedElement.step.name != null && selectedElement.step.name != 'null'">Element Name: <b>{{selectedElement.step.name}}</b>
+                        </li>
+                        <li class="list-group-item">Inverted: <b>{{selectedElement.step.inverse}}</b>
+                        </li>
+                        <li class="list-group-item" ng-if="selectedElement.step.sFailure != 'null'">Failure Mode: <b>{{selectedElement.step.sFailure}}</b>
+                        </li>
+                        <li class="list-group-item" ng-if="selectedElement.step.validation != 'null'">Validation: <b>{{selectedElement.step.validation}} ({{selectedElement.step.validationType}})</b>
+                        </li>
+                        <li class="list-group-item" ng-if="selectedElement.step.threshold > 0">Threshold: <b>{{selectedElement.step.threshold}}</b>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="panel-body" ng-if="selectedElement.locatorResult != null && selectedElement.locatorResult != 'null' && selectedElement.locatorResult.length > 0">
+                      <ul class="list-group">
+                        <li class="list-group-item" ng-class="{'list-group-item-success' : locator.success == true, 'list-group-item-danger' : locator.success == false}" ng-repeat="locator in selectedElement.locatorResult">{{locator.locator}} <span class="badge">{{locator.time}} ms</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <span ng-if="selectedElement.parameterList.length > 0 && selectedElement.step.kw!='REPORT'">
+                    <div class="panel panel-info" style="margin-bottom: 0px; margin-top: 5px">
+                      <div class="panel-heading">
+                        <h3 class="panel-title" style="color: black">Parameters</h3>
+                      </div>
+                      <div class="panel-body">
+                        <ul class="list-group">
+                          <li class="list-group-item" ng-repeat="p in selectedElement.step.parameterList"><span ng-if="p.type == 'STATIC'">{{p.value}}</span> <span ng-if="p.type != 'STATIC'">{{selectedElement.parameterList[ $index ]}} as ({{p.value}})</span> <sup ng-if="p.name != 'null' && p.name != null && p.name != ''">({{p.name}})</sup> <span class="badge">{{p.type}}</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </span>
+                  <div class="panel panel-info" style="margin-bottom: 0px; margin-top: 5px" ng-if="selectedElement.executionParameter.CONTEXT != null">
+                    <div class="panel-heading">
+                      <h3 class="panel-title" style="color: black">Result</h3>
+                    </div>
+                    <div class="panel-body">
+                      <ul class="list-group">
+                        <li class="list-group-item" ng-repeat="(key,value) in selectedElement.executionParameter.CONTEXT">{{key}}: <b>{{value}}</b>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="panel panel-info" style="margin-bottom: 0px; margin-top: 5px" ng-if="hasExecutionParameter( selectedElement, 'XML' ) || hasExecutionParameter( selectedElement, 'HTML' )">
+                    <div class="panel-heading">
+                      <h3 class="panel-title" style="color: black">Source</h3>
+                    </div>
+                    <div class="panel-body">
+                      <ul class="nav nav-pills nav-justified">
+                        <li ng-if="hasExecutionParameter( selectedElement, 'XML' )" role="presentation">
+                          <div class="col-md-2" stype="text-align: center">
+                            <a hRef="{{selectedElement.executionParameter.XML}}" class="btn btn-info" type="button" target="_blank">Raw Source</a>
+                          </div>
+                        </li>
+                        <li ng-if="hasExecutionParameter( selectedElement, 'HTML' )" role="presentation">
+                          <div class="col-md-2" stype="text-align: center">
+                            <a hRef="{{selectedElement.executionParameter.HTML}}" class="btn btn-primary" type="button" target="_blank">Formatted Source</a>
+                          </div>
+                        </li>
+                        <li ng-if="hasExecutionParameter( selectedElement, 'XPATH' )" role="presentation">
+                          <div class="col-md-2" stype="text-align: center">
+                            <a hRef="{{selectedElement.executionParameter.XPATH}}" class="btn btn-warning" type="button" target="_blank">Analyze</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6" ng-if="selectedElement.executionParameter.SCREENSHOT != null">
+                  <a hRef="{{selectedElement.executionParameter.SCREENSHOT}}" target="_blank"> <img width="100%" src="{{selectedElement.executionParameter.SCREENSHOT}}" class="img-rounded" />
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <span class="pull-right"> <i>Started at <b>{{selectedElement.startTime.timeOnly}}</b> then ran for <b>{{selectedElement.endTime.raw - selectedElement.startTime.raw}} ms</b> and ended at <b>{{selectedElement.endTime.timeOnly}}</b></i>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/ng-template" id="step.html">
+    <div data-nodrag ui-tree-handle  class="tree-node tree-node-content" style="font-size: 8pt; padding-left: 5px; padding-right: 5px;cursor: default;" ng-class="{'filteredStep text-muted' : stepDef.stepStatus == 'FILTERED'}">
+        
+        <img src="http://xframium.org/reporting/1.0.20/{{stepDef.step.image == null || stepDef.step.image == 'null'  ? stepDef.step.kw : stepDef.step.image}}.png" width="16" style="margin-right: 2px"/>
+        <a ng-if="stepDef.stepList.length != 0" data-nodrag ng-click="toggle(this)" style="cursor: default" >
+            <span ng-if="stepDef.stepList.length != 0" class="glyphicon" ng-class="{'glyphicon-chevron-right': collapsed, 'glyphicon-chevron-down': !collapsed }" style="cursor: default"></span>
+        </a>
+        <span data-nodrag ng-if="stepDef.stepList.length == 0" style="margin-left: 15px"></span>
+
+        <a hRef="#" ng-click="selectElement( 'Step', stepDef )" data-nodrag compile="formatStep(stepDef)" style="cursor: default" ng-if="stepDef.step.kw != 'TEST'"></a>
+
+		<span ng-if="stepDef.step.kw == 'TEST'" class="text-danger">Cause of Failure: {{stepDef.message}}</span>
+
+        <span ng-if="stepDef.stepStatus == 'SUCCESS'" data-nodrag class="pull-right text-success glyphicon glyphicon-ok" style="cursor: default;"></span>
+        <span ng-if="stepDef.stepStatus == 'FAILURE'" data-nodrag class="pull-right text-danger glyphicon glyphicon-remove" style="cursor: default;"></span>
+        <span ng-if="stepDef.stepStatus == 'FAILURE_IGNORED'" data-nodrag class="pull-right text-warning glyphicon glyphicon-warning-sign" style="cursor: default;"></span> 
+    </div>
+    <ol data-nodrag ui-tree-nodes="" ng-model="stepDef.stepList" ng-if="stepDef.stepList.length != 0" ng-class="{hidden: collapsed}" >
+        <li data-nodrag ui-tree-node ng-repeat="stepDef in stepDef.stepList | filter:filterBy" ng-include="'step.html'"  style="cursor: default"></li>
+    </ol>
+</script>
+<script type="text/ng-template" id="errorDetail.html">
+<div class="panel panel-info" style="margin-bottom: 0px;">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            {{formatStepText(selectedStep)}}
+            <a href="#" ng-click="cancelElement()">
+                <span class="pull-right glyphicon glyphicon-remove-sign"></span>
+            </a>
+        </h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-4">
+                <a hRef="{{selectedStep.executionParameter.SCREENSHOT}}" target="_blank"><img width="100%" src="{{selectedStep.executionParameter.SCREENSHOT}}" class="img-rounded" /></a>
+            </div>
+            <div class="col-md-8" ng-if="selectedStep.throwable != 'null'">
+                <span class="text-danger" >{{selectedStep.throwable}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-2" ng-if="hasExecutionParameter( selectedStep, 'XML' )" stype="text-align: center"><a hRef="{{selectedStep.executionParameter.XML}}" class="btn btn-primary" type="button" target="_blank">View XML</a></div>
+            <div class="col-md-2" ng-if="hasExecutionParameter( selectedStep, 'HTML' )"  stype="text-align: center"><a hRef="{{selectedStep.executionParameter.HTML}}" class="btn btn-success" type="button" target="_blank">View XML (as HTML)</a></div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</div>
+</script>
+<script>
+  var xTest = angular.module('xTest', [ 'ngAnimate', 'ngSanitize', 'ui.bootstrap', 'ui.tree' ]);
+
+  xTest.config([ '$compileProvider', function($compileProvider) {
+    $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|file|data|chrome-extension):/);
+  } ]);
+
+  xTest.directive('compile', [ '$compile', function($compile) {
+    return function(scope, element, attrs) {
+      scope.$watch(function(scope) {
+        return scope.$eval(attrs.compile);
+      }, function(value) {
+        element.html(value);
+        $compile(element.contents())(scope);
+      });
+    };
+  } ]);
+
+
+
+  xTest.controller('xTestController', function XTestController($scope, $uibModal) {
+    $scope.testData = testData.pageData;
+    $scope.passed = 0;
+    $scope.failed = 0;
+    $scope.ignored = 0;
+    $scope.filtered = 0;
+    $scope.total = 0;
+    $scope.duration = 0;
+    $scope.formattedDuration = 0;
+    $scope.selectedStep;
+    $scope.filterBy = '';
+    $scope.selectedContext = '';
+    $scope.selectedElement = null;
+    $scope.selectedState = 'PRIMARY';
+
+    $scope.rootTree = [ 'Steps', 'Logs', 'Links', 'Data', 'Pages', 'Capabilities', 'Performance', 'Environment', 'Imaging Analysis' ];
+
+    $scope.capTypes = [ 'Supplied', 'Derived' ];
+
+    $scope.logTypes = [ 'Device', 'Console' ];
+
+    $scope.hasExecutionParameter = function(step, parameterName) {
+      return step.executionParameter[parameterName] != null;
+    }
+
+    $scope.cancelElement = function() {
+      $scope.elementModalInstance.close();
+    };
+
+    $scope.filterElement = function(step) {
+      return (step.stepStatus == $scope.filterBy || $scope.filterBy.includes(step.name) || $scope.filterBy.includes(step.kw))
+    }
+
+    $scope.showError = function(step) {
+      $scope.selectedStep = step;
+      $scope.errorTitle = $scope.formatStep(step);
+
+      $scope.elementModalInstance = $uibModal.open({
+        animation : true,
+        ariaLabelledBy : 'modal-title',
+        ariaDescribedBy : 'modal-body',
+        templateUrl : 'errorDetail.html',
+        scope : $scope,
+        size : 'lg',
+      });
+    }
+
+    $scope.getPassed = function() {
+      var totalPassed = 0;
+      for (var i = 0; i < $scope.testData.stepList.length; i++) {
+        totalPassed += $scope._getByStatus($scope.testData.stepList[i], 'SUCCESS');
+      }
+
+      return totalPassed;
+    }
+
+    $scope.formatStepText = function(step) {
+      var imageName = step.step.kw;
+      if (step.step.image != null)
+        imageName = step.step.image;
+
+      var messageText = $scope.stepMessages[imageName];
+
+
+      if (step.customMessage != null && step.customMessage != 'null' && step.customMessage != '')
+        messageText = step.customMessage;
+
+      if (messageText == null)
+        messageText = $scope.stepMessages['DEFAULT'];
+
+      messageText = messageText.replace("{kw}", step.step.kw);
+      messageText = messageText.replace("{name}", step.step.name.replace('<', '&lt;').replace('>', '&gt;'));
+      messageText = messageText.replace("{subName}", step.step.subName);
+      messageText = messageText.replace("{pageName}", step.step.pageName);
+      messageText = messageText.replace("{device}", $scope.testData.device.key);
+      for (var i = 0; i < step.parameterList.length; i++) {
+        messageText = messageText.replace("{$p" + (i + 1) + "}", step.parameterList[i]);
+      }
+
+      return messageText;
+    }
+
+    $scope.selectElement = function(context, element) {
+      $scope.selectedContext = context;
+      $scope.selectedElement = element;
+
+      if (context == 'Step') {
+        switch (element.stepStatus) {
+        case 'SUCCESS':
+          $scope.selectedState = 'success';
+          break;
+        case 'FAILURE':
+          $scope.selectedState = 'danger';
+          break;
+        case 'FAILURE_IGNORED':
+          $scope.selectedState = 'warning';
+          break;
+        default:
+          $scope.selectedState = 'info';
+          break;
+        }
+      }
+      else
+        $scope.selectedState = 'primary';
+
+      if ($scope.selectedElement.step.kw == 'ACCESSIBILITY' && $scope.selectedElement.accessibility == null)
+        $scope.selectedElement.accessibility = JSON.parse($scope.selectedElement.message);
+
+      console.log($scope.selectedElement.accessibility);
+    }
+
+    $scope.formatStep = function(step) {
+      var messageText = null;
+
+      if (step.customMessage != null && step.customMessage != 'null' && step.customMessage != '')
+        messageText = '<span class="text-info">' + step.customMessage + "</span>";
+
+      if (messageText == null) {
+        var imageName = step.step.kw;
+        if (step.step.image != null && step.step.image != 'null')
+          imageName = step.step.image;
+
+        messageText = $scope.stepMessages[imageName];
+      }
+
+      if (messageText == null)
+        messageText = $scope.stepMessages['DEFAULT'];
+
+      messageText = messageText.replace("{kw}", step.step.kw);
+      messageText = messageText.replace("{name}", step.step.name.replace('<', '&lt;').replace('>', '&gt;'));
+      messageText = messageText.replace("{subName}", step.step.subName);
+      messageText = messageText.replace("{pageName}", step.step.pageName);
+      messageText = messageText.replace("{errorMessage}", step.message);
+      for (var i = 0; i < step.parameterList.length; i++) {
+        messageText = messageText.replace("{$p" + (i + 1) + "}", '<span class="text-info">' + step.parameterList[i] + "</span>");
+      }
+
+      if (step.step.device != 'null' && step.step.device != '' && step.step.device != null) {
+        messageText += ' *';
+      }
+
+      return messageText;
+    }
+
+    $scope.getStepDuration = function(step) {
+      return step.endTime.raw - step.startTime.raw;
+    }
+
+    $scope.getFailed = function() {
+      var total = 0;
+      for (var i = 0; i < $scope.testData.stepList.length; i++) {
+        total += $scope._getByStatus($scope.testData.stepList[i], 'FAILURE');
+      }
+
+      return total;
+    }
+
+    $scope.getIgnored = function() {
+      var total = 0;
+      for (var i = 0; i < $scope.testData.stepList.length; i++) {
+        total += $scope._getByStatus($scope.testData.stepList[i], 'FAILURE_IGNORED');
+      }
+
+      return total;
+    }
+
+    $scope._getByStatus = function(currentStep, status) {
+
+      var total = 0;
+      if (currentStep.stepStatus == status || status == null)
+        total += 1;
+      for (var i = 0; i < currentStep.stepList.length; i++) {
+        total += $scope._getByStatus(currentStep.stepList[i], status);
+      }
+
+      return total;
+    }
+
+    $scope.initialize = function() {
+      $scope.passed = $scope.getPassed();
+      $scope.failed = $scope.getFailed();
+      $scope.ignored = $scope.getIgnored();
+      $scope.total = $scope.passed + $scope.failed + $scope.ignored;
+      $scope.duration = $scope.testData.endTime.raw - $scope.testData.startTime.raw;
+      $scope.formattedDuration = $scope.createDuration($scope.duration);
+    }
+
+    $scope.createDuration = function(duration) {
+      var milliseconds = parseInt((duration % 1000) / 100);
+      var seconds = parseInt((duration / 1000) % 60);
+      var minutes = parseInt((duration / (1000 * 60)) % 60);
+      var hours = parseInt((duration / (1000 * 60 * 60)) % 24);
+
+      return hours + "h " + minutes + "m " + seconds + "s"
+    }
+
+    $scope.artifactTabs = {
+      "DEVICE_LOG" : "Device Log",
+      "CONSOLE_LOG" : "Console Log",
+      "IMAGING_ANALYSIS" : "Imaging Analysis",
+      "TIMING_HTML" : "Performance"
+    }
+
+    $scope.links = {
+      "EXECUTION_REPORT_PDF_FILE" : "Perfecto Legacy Execution Report (PDF)",
+      "EXECUTION_REPORT_FILE" : "Perfecto Legacy Execution Report (PDF)",
+      "EXECUTION_REPORT_CSV_FILE" : "Perfecto Legacy Execution Report (CSV)",
+      "EXECUTION_REPORT_XML_FILE" : "Perfecto Legacy Execution Report (XML)",
+      "EXECUTION_REPORT_HTML_FILE" : "Perfecto Legacy Execution Report (HTML)",
+      "SAUCE_LABS_ARTIFACT_URL" : "SauceLabs Report",
+      "REPORTIUM_ARTIFACT_URL" : "Perfecto Execution Report",
+      "ALM_DEFECT_ARTIFACT_URL" : "HP ALM Defect Detail",
+      "STATISTICS" : "Device Statistics"
+    }
+
+    $scope.stepMessages = {
+      "CALL" : "{name}",
+      "CALL2" : "{name}",
+      "MODULE" : "Execute the {kw} named {name}",
+      "SET" : "{kw} the value to {$p1}",
+      "ADD_DEVICE" : "Add {$p1}",
+      "ADD_DEVICE2" : "Add a new device",
+      "WAIT_FOR" : "{kw} for {name}",
+      "NAVIGATE" : "<span class='text-danger'>DEPRECATED</span> {kw} operation (use BROWSER)",
+      "LOOP" : "Execute {$p2} in a {kw}",
+      "STATE" : "Extract State",
+      "ALERT" : "{name} to a web-based {kw} ",
+      "VISIBLE" : "Is {name} {kw}",
+      "ALIGN" : "{kw} with {name}",
+      "SET_CONTENT_KEY" : "{kw} to a {$p1}",
+      "BREAK" : "{kw}",
+      "VERIFY_COLOR" : "Verify Color of {name}",
+      "ELSE" : "Else",
+      "EXECWS" : "Execute WebSerivce",
+      "WAIT" : "{kw}",
+      "HAS_FOCUS" : "Does {name} have focus",
+      "OPERATOR" : "Operator Comparison",
+      "ATTRIBUTE" : "Get the attribute {$p1}",
+      "EXISTS" : "Does {name} exist",
+      "ENABLED" : "Is {name} enabled",
+      "IS_ENABLED" : "Is {name} enabled",
+      "VERIFY_CONTRAST" : "Verify Contrast of {name}",
+      "MOUSE" : "Mouse Operation",
+      "DEVICE" : "Device Action",
+      "MATH" : "Math Operation",
+      "REPORT" : "Report Message",
+      "EXECJS" : "Execute JavaScript",
+      "CACHE" : "Cache subsystem",
+      "BROWSER" : "Perform Browser operation",
+      "WINDOW" : "<span class='text-danger'>DEPRECATED</span> {kw} operation (use BROWSER)",
+      "GET" : "Get the value for {name}",
+      "COMPARE" : "Compare Values",
+      "COMPARE2" : "Compare Values",
+      "GESTURE" : "Perform a {name}",
+      "STRING2" : "String Operation",
+      "STRING" : "<span class='text-danger'>DEPRECATED</span> {kw} operation (use STRING2)",
+      "VISUAL" : "Visual Operation",
+      "DEFAULT" : "{kw} - Unmapped keyword",
+      "CLICK" : "{kw} on {name}",
+      "COMMAND" : "Execute Command",
+      "EMAIL" : "Email Operation",
+      "CONSOLE" : "Console message",
+      "TEST" : "Cause of Failure: {errorMessage}",
+      "APPLICATION" : "{name} an {kw}",
+      "CALLBACK" : "{name}",
+      "FLOW" : "Flow set to {name}",
+      "SELECTED" : "Is {name} selected",
+      "RANDOM" : "Generate a random {name}",
+      "SQL" : "Executing SQL",
+      "DATE" : "Date Operation",
+      "DEBUG" : "***** DEBUG *****",
+      "CONTEXT" : "{name} Context Operation",
+      "FUNCTION" : "Call native function {name}",
+      "ACCESSIBILITY" : "Verify Accessibility",
+      "GHERKIN" : "{name}",
+      "VERIFICATION" : "Verification Check Point",
+      "SWITCH" : "Execute a step based off of data",
+      "SCRIPT" : "Execute a predefined OS script",
+      "SCRIPT_STEP" : "{name}"
+    };
+
+  });
+</script>
+</html>
