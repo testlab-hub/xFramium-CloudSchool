@@ -1,0 +1,11 @@
+/bin/
+/target/
+/test-output/
+/debug.log
+/fordPass-out/
+/jnlp/
+/MANIFEST.MF
+/lincolnWay-out/
+/test/
+/mll/
+/derby.log
