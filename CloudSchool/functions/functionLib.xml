@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite xmlns="http://www.xframium.org/testRegistry"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.xframium.org/testRegistry http://www.xframium.org/xsd/pageManagement/testRegistry.xsd">
+	<!-- Reusable Functions -->
+
+
+	<!-- PAGE Model -->
+	<model>
+		<page name="CSLoginPage" />
+	</model>
+	<!-- ========= -->
+	<!-- FUNCTIONS -->
+	<!-- ========= -->
+	
+	<!-- Login Function -->
+	<function name="Login_Function">
+		<step name="MAXIMIZE" type="BROWSER" />
+		<step name="CloudScl_img.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
+			<parameter type="STATIC" value="45" />
+		</step>
+		<step name="Username_txtbox.CLICKABLE" page="CSLoginPage" type="WAIT_FOR">
+			<parameter type="STATIC" value="45" />
+		</step>
+		<step name="Username_txtbox" page="CSLoginPage" type="SET">
+			<parameter type="DATA" value="LoginCredentials.UserName" />
+		</step>
+		<step name="Password_txtbox" page="CSLoginPage" type="SET">
+			<parameter type="DATA" value="LoginCredentials.Password" />
+		</step>
+		<step name="Signin_btn" page="CSLoginPage" type="CLICK" />
+<!-- 		<step type="WAIT" name="WAIT">
+			<parameter value="5" />
+		</step> -->
+	</function>
+	
+	<!--Logout Function -->
+	<function name="Logout_Function">
+		<step name="MrAdmin_topnav.CLICKABLE" page="CSHomePage" type="WAIT_FOR">
+			<parameter type="STATIC" value="45" />
+		</step>
+		<step name="MrAdmin_topnav" page="CSHomePage" type="CLICK" />
+		<step name="Logout_link.CLICKABLE" page="CSHomePage" type="WAIT_FOR">
+			<parameter type="STATIC" value="45" />
+		</step>
+		<step name="Logout_link" page="CSHomePage" type="CLICK" />
+	</function>
+	
+	<!--Invalid Login Function -->
+	<function name="InvalidLogin_Function">
+		<step name="MAXIMIZE" type="BROWSER" />
+		<step name="CloudScl_img.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
+			<parameter type="STATIC" value="45" />
+		</step>
+		
+		<!-- Test blank text box -->
+		<step name="Signin_btn" page="CSLoginPage" type="CLICK" />
+		<step name="Username_error_text.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
+			<parameter type="STATIC" value="45" />
+		</step>
+		<step name="Password_error_text.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
+			<parameter type="STATIC" value="45" />
+		</step>
+		
+		<!-- Test incorrect length input -->
+		<step name="Username_txtbox.CLICKABLE" page="CSLoginPage" type="WAIT_FOR">
+			<parameter type="STATIC" value="45" />
+		</step>
+		<step name="Username_txtbox" page="CSLoginPage" type="SET">
+			<parameter type="DATA" value="LoginCredentials.InvalidUserName" />
+		</step>
+		<step name="Username_error_text.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
+			<parameter type="STATIC" value="45" />
+		</step>
+		
+		<step name="Password_txtbox" page="CSLoginPage" type="SET">
+			<parameter type="DATA" value="LoginCredentials.InvalidPassword" />
+		</step>
+		<step name="Password_error_text.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
+			<parameter type="STATIC" value="45" />
+		</step>
+		
+		<!-- Test incorrect details -->
+		<step name="Username_txtbox" page="CSLoginPage" type="SET">
+			<parameter type="DATA" value="LoginCredentials.UserName" />
+		</step>
+		<step name="Password_txtbox" page="CSLoginPage" type="SET">
+			<parameter type="DATA" value="LoginCredentials.Password" />
+		</step>
+		<step name="Signin_btn" page="CSLoginPage" type="CLICK" />
+		<step name="UsernamePassword_error_panel.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
+			<parameter type="STATIC" value="45" />
+		</step>
+	</function>
+
+</suite>

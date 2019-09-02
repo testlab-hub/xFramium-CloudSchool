@@ -1,0 +1,6 @@
+<data>
+  <recordType name="LoginCredentials" lockRecords="false">
+    <record name="TestUser_One" UserName="admin" Password="demo123" />
+    <record name="TestUser_Two" UserName="invalidadmin" Password="invalidpw" InvalidUserName="adm" InvalidPassword="de"/>
+  </recordType>
+</data>

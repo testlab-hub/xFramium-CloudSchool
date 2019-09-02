@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deviceRegistry
+	xmlns="http://www.xframium.org/deviceRegistry"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.xframium.org/deviceRegistry http://www.xframium.org/xsd/deviceManagement/deviceRegistry.xsd">
+
+   <!-- Desktop Local Browser list -->
+   <device name="Firefox" browserName="firefox" manufacturer="Mozilla" model="Firefox" os="Windows" active="false" availableDevices="1" tagNames="FirefoxBrowser,Desktop"  cloud="local"/>
+   <device name="Chrome" browserName="chrome" manufacturer="Google" model="Chrome" os="Windows" active="true" availableDevices="1" tagNames="ChromeBrowser,Desktop"  cloud="local"  />
+   <device name="IE" browserName="internet explorer" manufacturer="Microsoft" model="IE" os="Windows" active="false" availableDevices="1" tagNames="IEBrowser,Desktop" cloud="local"/>
+
+</deviceRegistry>

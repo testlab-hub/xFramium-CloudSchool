@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elementDefinition
+	xmlns="http://www.xframium.org/pageRegistry"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.xframium.org/pageRegistry http://www.xframium.org/xsd/pageManagement/pageRegistry.xsd">
+
+	<site name="CloudSchool">
+
+		<page name="CSLoginPage">
+			<!-- Login page -->
+			<element name="CloudScl_img" descriptor="XPATH" value="//div[@class='login-logo']//a//img" />
+			<element name="Username_txtbox" descriptor="XPATH" value="//input[@name='username']" />
+			<element name="Password_txtbox" descriptor="XPATH" value="//input[@name='password']" />
+			<element name="Signin_btn" descriptor="XPATH" value="//button[@class='btn btn-lg btn-block btn-flat login-button']" />
+			<element name="Username_error_text" descriptor="XPATH" value="//em[@id='username-error']" />
+			<element name="Password_error_text" descriptor="XPATH" value="//em[@id='password-error']" />
+			<element name="UsernamePassword_error_panel" descriptor="XPATH" value="//h5[contains(text(),'Your email/password combination was incorrect OR a')]" />
+			
+		</page>
+		
+		<page name="CSHomePage">
+			<!-- Home page -->
+			<element name="Dashboard_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Dashboard')])[1]" />
+			<element name="Students_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Students')])[1]" />
+			<element name="Teachers_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Teachers')])[1]" />
+			<element name="Attendance_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Attendance')])[1]" />
+			<element name="Student_Attendance_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Student Attendance')])[1]" />
+			<element name="Employee_Attendance_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Employee Attendance')])[1]" />
+			<element name="Academic_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Academic')])[1]" />
+			<element name="Academic_Class_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Class')])[1]" />
+			<element name="Academic_Session_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Section')])[1]" />
+			<element name="Academic_Subject_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Subject')])[1]" />
+			<element name="Exam_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Exam')])[1]" />
+			<element name="Exam_List_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Exam')])[2]" />
+			<element name="Exam_Grade_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Grade')])[1]" />
+			<element name="Exam_Rule_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Rule')])[1]" />
+			<element name="Marks&amp;Result_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Marks &amp; Result')])[1]" />
+			<element name="Marks_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Marks')])[1]" />
+			<element name="Result_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Result')])[1]" />
+			<element name="HRM_sidenav" descriptor="XPATH" value="(//span[contains(text(),'HRM')])[1]" />
+			<element name="HRM_Employee_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Employee')])[2]" />
+			<element name="HRM_Leave_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Leave')])[1]" />
+			<element name="HRM_WorkOffsite_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Work Outside')])[1]" />
+			<element name="HRM_Policy_sidenav" descriptor="XPATH" value="(//span[contains(text(),'Policy')])[1]" />
+			<element name="MrAdmin_topnav" descriptor="XPATH" value="(//span[contains(text(),'Mr. admin')])[1]" />
+			<element name="Profile_link" descriptor="XPATH" value="//li[contains(@class,'user-body')]/div[1]" />
+			<element name="Logout_link" descriptor="XPATH" value="//li[contains(@class,'user-footer')]//div[1]//a[1]//div[1]" />
+		</page>
+	</site>
+
+</elementDefinition>
