@@ -1,0 +1,64 @@
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact writeToDisk
+INFO: Writing stream to C:\Users\abbey\Desktop\2019-xFramium\CloudSchool\config\test-output\11-22_20-24-15-378\Windows chrome\TC01_ValidLogin\console.txt
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC01_ValidLogin-->Windows chrome: Generating artifact for SAUCE_LABS
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact generateArtifact
+WARNING: Error generating artifact for SAUCE_LABS(null)
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC01_ValidLogin-->Windows chrome: Generating artifact for REPORTIUM
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact generateArtifact
+WARNING: Error generating artifact for REPORTIUM(null)
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC01_ValidLogin-->Windows chrome: Generating artifact for EXECUTION_REPORT_HTML
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact generateArtifact
+WARNING: Error generating artifact for EXECUTION_REPORT_HTML(null)
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC01_ValidLogin-->Windows chrome: Generating artifact for EXECUTION_REPORT_PDF
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact generateArtifact
+WARNING: Error generating artifact for EXECUTION_REPORT_PDF(null)
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC01_ValidLogin-->Windows chrome: Generating artifact for ALL_IN_ONE
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact writeToDisk
+INFO: Writing stream to C:\Users\abbey\Desktop\2019-xFramium\CloudSchool\config\test-output\11-22_20-24-15-378\Windows chrome\TC01_ValidLogin\allInOne.html
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC01_ValidLogin-->Windows chrome: Generating artifact for EXECUTION_RECORD_JSON
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact writeToDisk
+INFO: Writing stream to C:\Users\abbey\Desktop\2019-xFramium\CloudSchool\config\test-output\11-22_20-24-15-378\Windows chrome\TC01_ValidLogin\Test.js
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC01_ValidLogin-->Windows chrome: Generating artifact for EXECUTION_RECORD_HTML
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact writeToDisk
+INFO: Writing stream to C:\Users\abbey\Desktop\2019-xFramium\CloudSchool\config\test-output\11-22_20-24-15-378\Windows chrome\TC01_ValidLogin\index.html
+Nov 22, 2019 8:24:15 PM org.xframium.device.ng.AbstractSeleniumTest cleanUpConnectedDevice
+INFO: xF-TC01_ValidLogin-->Windows chrome: Quiting WebDriver 
+Nov 22, 2019 8:24:15 PM org.xframium.device.DeviceManager addRun
+INFO: xF-TC01_ValidLogin-->Windows chrome: Adding run Chrome - TC01_ValidLogin to Windows chrome
+Nov 22, 2019 8:24:15 PM org.xframium.device.ng.TestContainer completeTest
+WARNING: xF-TC01_ValidLogin-->Windows chrome: Test Completed: Chrome - TC01_ValidLogin - COMPLETED
+Nov 22, 2019 8:24:15 PM org.xframium.device.ng.RunContainer addRun
+WARNING: xF-TC01_ValidLogin-->Windows chrome:ADDING Chrome - TC01_ValidLogin
+Nov 22, 2019 8:24:15 PM org.xframium.device.ng.AbstractSeleniumTest afterMethod
+INFO: xF-TC01_ValidLogin-->Windows chrome: Adding Execution for Chrome - TC01_ValidLogin - Chrome - Chrome - org.xframium.device.ng.TestPackage@355b3a88 - org.xframium.device.ng.TestName@301599e0
+Nov 22, 2019 8:24:15 PM org.xframium.device.ng.RunContainer addRun
+WARNING: xF-Acquiring Test Package...:ADDING Chrome - TC02_InValidLogin
+Nov 22, 2019 8:24:15 PM org.xframium.device.DeviceManager getDevice
+WARNING: Device has too many issues - Windows chrome
+Nov 22, 2019 8:24:15 PM org.xframium.device.ng.RunContainer addRun
+WARNING: xF-TC02_InValidLogin-->Windows chrome:Issued RESET on Chrome - TC02_InValidLogin
+Nov 22, 2019 8:24:15 PM org.xframium.device.ng.TestContainer getTestPackage
+WARNING: Device Invalidated: Windows chrome
+Nov 22, 2019 8:24:15 PM org.xframium.device.ng.AbstractSeleniumTest beforeMethod
+INFO: xF-TC02_InValidLogin-->Windows chrome: acquired for testDriver
+Nov 22, 2019 8:24:15 PM org.xframium.driver.XMLTestDriver testDriver
+INFO: xF-TC02_InValidLogin-->Windows chrome: Performing initialization checked for Chrome - TC02_InValidLogin
+Nov 22, 2019 8:24:15 PM org.xframium.driver.XMLTestDriver testDriver
+SEVERE: xF-TC02_InValidLogin-->Windows chrome: Device not connected for Chrome - TC02_InValidLogin
+Nov 22, 2019 8:24:15 PM org.xframium.device.ng.AbstractSeleniumTest cleanUpConnectedDevice
+INFO: xF-TC02_InValidLogin-->Windows chrome: Attempting to clean up TC02_InValidLogin on Windows chrome
+Nov 22, 2019 8:24:15 PM org.xframium.device.ng.AbstractSeleniumTest cleanUpConnectedDevice
+INFO: xF-TC02_InValidLogin-->Windows chrome:Closing WebDriver 
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC02_InValidLogin-->Windows chrome: Generating artifact for DEVICE_LOG
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact generateArtifact
+WARNING: Error generating artifact for DEVICE_LOG(null)
+Nov 22, 2019 8:24:15 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC02_InValidLogin-->Windows chrome: Generating artifact for CONSOLE_LOG

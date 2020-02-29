@@ -1,0 +1,297 @@
+Nov 22, 2019 8:52:12 PM org.xframium.artifact.AbstractArtifact writeToDisk
+INFO: Writing stream to C:\Users\abbey\Desktop\2019-xFramium\CloudSchool\config\test-output\11-22_20-52-11-915\Windows internet explorer\TC01_ValidLogin\console.txt
+Nov 22, 2019 8:52:12 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC01_ValidLogin-->Windows internet explorer: Generating artifact for SAUCE_LABS
+Nov 22, 2019 8:52:12 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC01_ValidLogin-->Windows internet explorer: Generating artifact for REPORTIUM
+Nov 22, 2019 8:52:12 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC01_ValidLogin-->Windows internet explorer: Generating artifact for EXECUTION_REPORT_HTML
+Nov 22, 2019 8:52:12 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC01_ValidLogin-->Windows internet explorer: Generating artifact for EXECUTION_REPORT_PDF
+Nov 22, 2019 8:52:12 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC01_ValidLogin-->Windows internet explorer: Generating artifact for ALL_IN_ONE
+Nov 22, 2019 8:52:12 PM org.xframium.artifact.AbstractArtifact writeToDisk
+INFO: Writing stream to C:\Users\abbey\Desktop\2019-xFramium\CloudSchool\config\test-output\11-22_20-52-11-915\Windows internet explorer\TC01_ValidLogin\allInOne.html
+Nov 22, 2019 8:52:12 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC01_ValidLogin-->Windows internet explorer: Generating artifact for EXECUTION_RECORD_JSON
+Nov 22, 2019 8:52:12 PM org.xframium.artifact.AbstractArtifact writeToDisk
+INFO: Writing stream to C:\Users\abbey\Desktop\2019-xFramium\CloudSchool\config\test-output\11-22_20-52-11-915\Windows internet explorer\TC01_ValidLogin\Test.js
+Nov 22, 2019 8:52:12 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC01_ValidLogin-->Windows internet explorer: Generating artifact for EXECUTION_RECORD_HTML
+Nov 22, 2019 8:52:12 PM org.xframium.artifact.AbstractArtifact writeToDisk
+INFO: Writing stream to C:\Users\abbey\Desktop\2019-xFramium\CloudSchool\config\test-output\11-22_20-52-11-915\Windows internet explorer\TC01_ValidLogin\index.html
+Nov 22, 2019 8:52:12 PM org.xframium.device.ng.AbstractSeleniumTest cleanUpConnectedDevice
+INFO: xF-TC01_ValidLogin-->Windows internet explorer: Quiting WebDriver 
+Nov 22, 2019 8:52:14 PM org.xframium.device.DeviceManager addRun
+INFO: xF-TC01_ValidLogin-->Windows internet explorer: Adding run IE - TC01_ValidLogin to Windows internet explorer
+Nov 22, 2019 8:52:14 PM org.xframium.device.ng.TestContainer completeTest
+WARNING: xF-TC01_ValidLogin-->Windows internet explorer: Test Completed: IE - TC01_ValidLogin - COMPLETED
+Nov 22, 2019 8:52:14 PM org.xframium.device.ng.RunContainer addRun
+WARNING: COMPLETED on IE - TC01_ValidLogin
+Nov 22, 2019 8:52:14 PM org.xframium.device.ng.AbstractSeleniumTest afterMethod
+INFO: xF-TC01_ValidLogin-->Windows internet explorer: Adding Execution for IE - TC01_ValidLogin - IE - IE - org.xframium.device.ng.TestPackage@c09dcfe - org.xframium.device.ng.TestName@67c19c7d
+Nov 22, 2019 8:52:14 PM org.xframium.device.ng.RunContainer addRun
+WARNING: xF-Acquiring Test Package...:ADDING IE - TC02_InValidLogin
+Nov 22, 2019 8:52:14 PM org.xframium.device.factory.spi.WEBDriverFactory _createDriver
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Acquiring Device as: 
+_testName=TC02_InValidLogin
+browserName=internet explorer
+model=IE
+platform=ANY
+platformName=Windows
+version=
+
+against http://127.0.0.1:4444/wd/hub
+Nov 22, 2019 8:52:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Nov 22, 2019 8:52:15 PM org.xframium.device.factory.DeviceWebDriver$DeviceTimeouts implicitlyWait
+INFO: Setting IMPLICIT WAIT to 10000
+Nov 22, 2019 8:52:15 PM org.xframium.device.factory.DeviceWebDriver setExecutionId
+INFO: Execution ID recorded as [a7fbdf7a-e424-4038-9737-883c8addeebf]
+Nov 22, 2019 8:52:15 PM org.xframium.device.factory.DeviceWebDriver get
+WARNING: Could not extract height/width modifiers
+Nov 22, 2019 8:52:15 PM org.xframium.device.factory.AbstractDriverFactory createDriver
+SEVERE: Error populating device specifics
+java.lang.ClassCastException: com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to java.lang.String
+	at org.xframium.device.cloud.action.SELENIUMCloudActionProvider.popuplateDevice(SELENIUMCloudActionProvider.java:90)
+	at org.xframium.device.factory.AbstractDriverFactory.createDriver(AbstractDriverFactory.java:168)
+	at org.xframium.device.factory.AbstractDriverFactory.createDriver(AbstractDriverFactory.java:126)
+	at org.xframium.device.factory.AbstractDriverFactory.createDriver(AbstractDriverFactory.java:131)
+	at org.xframium.device.DeviceManager.getDevice(DeviceManager.java:467)
+	at org.xframium.device.ng.TestContainer.getTestPackage(TestContainer.java:114)
+	at org.xframium.device.ng.AbstractSeleniumTest.beforeMethod(AbstractSeleniumTest.java:438)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Nov 22, 2019 8:52:15 PM org.xframium.device.ng.TestContainer getTestPackage
+WARNING: Test Started: IE - TC02_InValidLogin - Windows internet explorer - org.xframium.device.ng.TestPackage@4a00a1a8 - org.xframium.device.ng.TestName@423b68ac
+Nov 22, 2019 8:52:15 PM org.xframium.device.ng.AbstractSeleniumTest beforeMethod
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: acquired for testDriver
+Nov 22, 2019 8:52:15 PM org.xframium.driver.XMLTestDriver testDriver
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Performing initialization checked for IE - TC02_InValidLogin
+Nov 22, 2019 8:52:15 PM org.xframium.driver.XMLTestDriver testDriver
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Executing IE - TC02_InValidLogin against IE
+Nov 22, 2019 8:52:15 PM org.xframium.page.keyWord.KeyWordDriver logConsole
+WARNING: **********************************************************************************************************************
+Executing [org.xframium.device.ng.TestName@423b68ac]
+**********************************************************************************************************************
+
+Nov 22, 2019 8:52:15 PM org.xframium.page.keyWord.KeyWordDriver executeTest
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Configuring Data Providers
+Nov 22, 2019 8:52:15 PM org.xframium.page.keyWord.KeyWordDriver executeTest
+INFO: Data Provider set as  [LoginCredentials.TestUser_Two, ]
+Nov 22, 2019 8:52:15 PM org.xframium.page.keyWord.KeyWordDriver executeTest
+INFO: Adding LoginCredentials.TestUser_Two as Name: TestUser_Two
+Type: LoginCredentials
+[InvalidUserName='adm']
+[UserName='invalidadmin']
+[InvalidPassword='de']
+[Password='invalidpw']
+
+Nov 22, 2019 8:52:15 PM org.xframium.page.keyWord.KeyWordDriver executeTest
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Configuring Data Drivers
+Nov 22, 2019 8:52:15 PM org.xframium.page.keyWord.KeyWordDriver executeTest
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Alerting Listeners
+Nov 22, 2019 8:52:15 PM org.xframium.page.keyWord.KeyWordDriver executeTest
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Processing Initialization
+Nov 22, 2019 8:52:15 PM org.xframium.page.keyWord.KeyWordDriver executeTest
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Executing Test=true
+Nov 22, 2019 8:52:15 PM org.xframium.page.keyWord.KeyWordTest executeTest
+INFO: *** Executing Test TC02_InValidLogin
+Nov 22, 2019 8:52:15 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Executing Step InvalidLogin_Function(KWSCall2)
+Nov 22, 2019 8:52:15 PM org.xframium.page.keyWord.KeyWordTest executeTest
+INFO: *** Executing Test InvalidLogin_Function
+Nov 22, 2019 8:52:15 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Executing Step MAXIMIZE(KWSBrowser)
+Nov 22, 2019 8:52:15 PM org.xframium.page.keyWord.KeyWordTest executeTest
+INFO: Creating Page [CloudSchool.CSLoginPage]
+Nov 22, 2019 8:52:15 PM org.xframium.page.factory.DefaultPageFactory _createPage
+INFO: Attempting to create PROXY interface by interface org.xframium.page.keyWord.KeyWordPage
+Nov 22, 2019 8:52:15 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Executing Step CloudScl_img.VISIBLE(KWSWaitFor)
+Nov 22, 2019 8:52:15 PM org.xframium.page.factory.LocalPageFactory _createPage
+INFO: Creating page implementation as org.xframium.page.keyWord.spi.KeyWordPageImpl
+Nov 22, 2019 8:52:15 PM org.xframium.device.factory.DeviceWebDriver _getContext
+WARNING: Context Switches are not supported - Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'DESKTOP-MVRFUI0', ip: '192.168.1.73', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Command duration or timeout: 0 milliseconds
+Nov 22, 2019 8:52:15 PM org.xframium.device.factory.DeviceWebDriver findElements
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Locating element using [By.xpath: //div[@class='login-logo']//a//img]
+Nov 22, 2019 8:52:16 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.xpath: //div[@class='login-logo']//a//img)
+org.openqa.selenium.WebDriverException: com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to java.util.List
+Command duration or timeout: 0 milliseconds
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.xframium.page.element.ByWrapper.findElements(ByWrapper.java:23)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
+	at org.xframium.device.factory.DeviceWebDriver.findElements(DeviceWebDriver.java:860)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.xframium.page.element.SeleniumElement$6.apply(SeleniumElement.java:1089)
+	at org.xframium.page.element.SeleniumElement$6.apply(SeleniumElement.java:1084)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at org.xframium.page.element.SeleniumElement._waitFor(SeleniumElement.java:1083)
+	at org.xframium.page.element.AbstractElement.waitFor(AbstractElement.java:741)
+	at org.xframium.page.keyWord.step.spi.KWSWaitFor._executeStep(KWSWaitFor.java:80)
+	at org.xframium.page.keyWord.step.AbstractKeyWordStep.executeStep(AbstractKeyWordStep.java:1216)
+	at org.xframium.page.keyWord.KeyWordTest.executeTest(KeyWordTest.java:529)
+	at org.xframium.page.keyWord.KeyWordDriver.executionFunction(KeyWordDriver.java:495)
+	at org.xframium.page.keyWord.step.spi.KWSCall2._executeStep(KWSCall2.java:148)
+	at org.xframium.page.keyWord.step.AbstractKeyWordStep.executeStep(AbstractKeyWordStep.java:1216)
+	at org.xframium.page.keyWord.KeyWordTest.executeTest(KeyWordTest.java:529)
+	at org.xframium.page.keyWord.KeyWordDriver.executeTest(KeyWordDriver.java:777)
+	at org.xframium.driver.XMLTestDriver.testDriver(XMLTestDriver.java:288)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-MVRFUI0', ip: '192.168.1.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
+Driver info: driver.version: XMLTestDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+	... 44 more
+Caused by: java.lang.ClassCastException: com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to java.util.List
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:393)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:504)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
+	at com.sun.proxy.$Proxy1.findElements(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElements(EventFiringWebDriver.java:177)
+	at org.openqa.selenium.remote.server.handler.FindElements.call(FindElements.java:50)
+	at org.openqa.selenium.remote.server.handler.FindElements.call(FindElements.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+Nov 22, 2019 8:52:16 PM org.xframium.device.factory.DeviceWebDriver$DeviceTimeouts implicitlyWait
+INFO: Setting IMPLICIT WAIT to 10000
+Nov 22, 2019 8:52:16 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+WARNING: xF-TC02_InValidLogin-->Windows internet explorer: ***** Step CloudScl_img.VISIBLE on page CSLoginPage failed
+Nov 22, 2019 8:52:16 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: ***** Step CloudScl_img.VISIBLE on page CSLoginPage failed
+Could not locate By.xpath: //div[@class='login-logo']//a//img
+	at org.xframium.page.keyWord.step.AbstractKeyWordStep.executeStep(AbstractKeyWordStep.java:1325)
+	at org.xframium.page.keyWord.KeyWordTest.executeTest(KeyWordTest.java:529)
+	at org.xframium.page.keyWord.KeyWordDriver.executionFunction(KeyWordDriver.java:495)
+	at org.xframium.page.keyWord.step.spi.KWSCall2._executeStep(KWSCall2.java:148)
+	at org.xframium.page.keyWord.step.AbstractKeyWordStep.executeStep(AbstractKeyWordStep.java:1216)
+	at org.xframium.page.keyWord.KeyWordTest.executeTest(KeyWordTest.java:529)
+	at org.xframium.page.keyWord.KeyWordDriver.executeTest(KeyWordDriver.java:777)
+	at org.xframium.driver.XMLTestDriver.testDriver(XMLTestDriver.java:288)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Nov 22, 2019 8:52:16 PM org.xframium.page.keyWord.KeyWordTest executeTest
+WARNING: ***** Step [CloudScl_img.VISIBLE] Failed
+Nov 22, 2019 8:52:16 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+WARNING: xF-TC02_InValidLogin-->Windows internet explorer: ***** Step InvalidLogin_Function on page null failed
+Nov 22, 2019 8:52:16 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: ***** Step InvalidLogin_Function on page null failed
+Could not locate By.xpath: //div[@class='login-logo']//a//img
+	at org.xframium.page.keyWord.step.AbstractKeyWordStep.executeStep(AbstractKeyWordStep.java:1325)
+	at org.xframium.page.keyWord.KeyWordTest.executeTest(KeyWordTest.java:529)
+	at org.xframium.page.keyWord.KeyWordDriver.executionFunction(KeyWordDriver.java:495)
+	at org.xframium.page.keyWord.step.spi.KWSCall2._executeStep(KWSCall2.java:148)
+	at org.xframium.page.keyWord.step.AbstractKeyWordStep.executeStep(AbstractKeyWordStep.java:1216)
+	at org.xframium.page.keyWord.KeyWordTest.executeTest(KeyWordTest.java:529)
+	at org.xframium.page.keyWord.KeyWordDriver.executeTest(KeyWordDriver.java:777)
+	at org.xframium.driver.XMLTestDriver.testDriver(XMLTestDriver.java:288)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:75)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Nov 22, 2019 8:52:16 PM org.xframium.page.keyWord.KeyWordTest executeTest
+WARNING: ***** Step [InvalidLogin_Function] Failed
+Nov 22, 2019 8:52:16 PM org.xframium.driver.XMLTestDriver testDriver
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Completed Executing IE - TC02_InValidLogin against IE
+Nov 22, 2019 8:52:16 PM org.xframium.device.ng.AbstractSeleniumTest cleanUpConnectedDevice
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Attempting to clean up TC02_InValidLogin on Windows internet explorer
+Nov 22, 2019 8:52:16 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Generating artifact for FAILURE_SOURCE
+Nov 22, 2019 8:52:16 PM org.xframium.artifact.AbstractArtifact generateArtifact
+WARNING: Error generating artifact for FAILURE_SOURCE(com.google.common.collect.Maps$TransformedEntriesMap cannot be cast to java.lang.String
+Command duration or timeout: 0 milliseconds)
+Nov 22, 2019 8:52:16 PM org.xframium.device.ng.AbstractSeleniumTest cleanUpConnectedDevice
+INFO: xF-TC02_InValidLogin-->Windows internet explorer:Closing WebDriver 
+Nov 22, 2019 8:52:16 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Generating artifact for DEVICE_LOG
+Nov 22, 2019 8:52:16 PM org.xframium.device.cloud.action.SELENIUMCloudActionProvider getLog
+INFO: Could not generate device logs
+Nov 22, 2019 8:52:16 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC02_InValidLogin-->Windows internet explorer: Generating artifact for CONSOLE_LOG
