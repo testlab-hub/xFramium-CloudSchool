@@ -1,0 +1,142 @@
+Sep 02, 2019 6:16:45 PM org.xframium.device.ng.RunContainer addRun
+WARNING: xF-Acquiring Test Package...:ADDING Chrome - TC01_ValidLogin
+Sep 02, 2019 6:16:45 PM org.xframium.device.factory.DriverManager getDriverFactory
+INFO: Creating Driver Factory as org.xframium.device.factory.spi.WEBDriverFactory
+Sep 02, 2019 6:16:45 PM org.xframium.device.factory.spi.WEBDriverFactory _createDriver
+INFO: xF-TC01_ValidLogin-->Windows chrome: Acquiring Device as: 
+_testName=TC01_ValidLogin
+browserName=chrome
+model=Chrome
+platform=ANY
+platformName=Windows
+version=
+
+against http://127.0.0.1:4444/wd/hub
+Sep 02, 2019 6:17:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Sep 02, 2019 6:17:08 PM org.xframium.device.factory.DeviceWebDriver$DeviceTimeouts implicitlyWait
+INFO: Setting IMPLICIT WAIT to 10000
+Sep 02, 2019 6:17:08 PM org.xframium.device.factory.DeviceWebDriver setExecutionId
+INFO: Execution ID recorded as [dc6b4d94-4e51-49e9-a836-4db54633b896]
+Sep 02, 2019 6:17:37 PM org.xframium.device.ng.TestContainer getTestPackage
+WARNING: Test Started: Chrome - TC01_ValidLogin - WINDOWS 10 Chrome - org.xframium.device.ng.TestPackage@218431fc - org.xframium.device.ng.TestName@41efcabf
+Sep 02, 2019 6:17:37 PM org.xframium.device.ng.AbstractSeleniumTest beforeMethod
+INFO: xF-TC01_ValidLogin-->Windows chrome: acquired for testDriver
+Sep 02, 2019 6:17:37 PM org.xframium.driver.XMLTestDriver testDriver
+INFO: xF-TC01_ValidLogin-->Windows chrome: Performing initialization checked for Chrome - TC01_ValidLogin
+Sep 02, 2019 6:17:37 PM org.xframium.driver.XMLTestDriver testDriver
+INFO: xF-TC01_ValidLogin-->Windows chrome: Executing Chrome - TC01_ValidLogin against Chrome
+Sep 02, 2019 6:17:37 PM org.xframium.page.keyWord.KeyWordDriver logConsole
+WARNING: **********************************************************************************************************************
+Executing [org.xframium.device.ng.TestName@41efcabf]
+**********************************************************************************************************************
+
+Sep 02, 2019 6:17:37 PM org.xframium.page.keyWord.KeyWordDriver executeTest
+INFO: xF-TC01_ValidLogin-->Windows chrome: Configuring Data Providers
+Sep 02, 2019 6:17:37 PM org.xframium.page.keyWord.KeyWordDriver executeTest
+INFO: Data Provider set as  [LoginCredentials.TestUser_One, ]
+Sep 02, 2019 6:17:37 PM org.xframium.page.keyWord.KeyWordDriver executeTest
+INFO: Adding LoginCredentials.TestUser_One as Name: TestUser_One
+Type: LoginCredentials
+[UserName='admin']
+[Password='demo123']
+
+Sep 02, 2019 6:17:37 PM org.xframium.page.keyWord.KeyWordDriver executeTest
+INFO: xF-TC01_ValidLogin-->Windows chrome: Configuring Data Drivers
+Sep 02, 2019 6:17:37 PM org.xframium.page.keyWord.KeyWordDriver executeTest
+INFO: xF-TC01_ValidLogin-->Windows chrome: Alerting Listeners
+Sep 02, 2019 6:17:37 PM org.xframium.page.keyWord.KeyWordDriver executeTest
+INFO: xF-TC01_ValidLogin-->Windows chrome: Processing Initialization
+Sep 02, 2019 6:17:37 PM org.xframium.page.keyWord.KeyWordDriver executeTest
+INFO: xF-TC01_ValidLogin-->Windows chrome: Executing Test=true
+Sep 02, 2019 6:17:37 PM org.xframium.page.keyWord.KeyWordTest executeTest
+INFO: *** Executing Test TC01_ValidLogin
+Sep 02, 2019 6:17:37 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC01_ValidLogin-->Windows chrome: Executing Step Login_Function(KWSCall2)
+Sep 02, 2019 6:17:37 PM org.xframium.page.keyWord.KeyWordTest executeTest
+INFO: *** Executing Test Login_Function
+Sep 02, 2019 6:17:37 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC01_ValidLogin-->Windows chrome: Executing Step MAXIMIZE(KWSBrowser)
+Sep 02, 2019 6:17:37 PM org.xframium.page.keyWord.KeyWordTest executeTest
+INFO: Creating Page [CloudSchool.CSLoginPage]
+Sep 02, 2019 6:17:37 PM org.xframium.page.factory.DefaultPageFactory _createPage
+INFO: Attempting to create PROXY interface by interface org.xframium.page.keyWord.KeyWordPage
+Sep 02, 2019 6:17:37 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC01_ValidLogin-->Windows chrome: Executing Step CloudScl_img.VISIBLE(KWSWaitFor)
+Sep 02, 2019 6:17:37 PM org.xframium.page.factory.LocalPageFactory _createPage
+INFO: Creating page implementation as org.xframium.page.keyWord.spi.KeyWordPageImpl
+Sep 02, 2019 6:17:38 PM org.xframium.device.factory.DeviceWebDriver _getContext
+WARNING: Context Switches are not supported - Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'DESKTOP-MVRFUI0', ip: '192.168.1.73', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Command duration or timeout: 0 milliseconds
+Sep 02, 2019 6:17:38 PM org.xframium.device.factory.DeviceWebDriver findElements
+INFO: xF-TC01_ValidLogin-->Windows chrome: Locating element using [By.xpath: //div[@class='login-logo']//a//img]
+Sep 02, 2019 6:17:38 PM org.xframium.device.factory.DeviceWebDriver$DeviceTimeouts implicitlyWait
+INFO: Setting IMPLICIT WAIT to 10000
+Sep 02, 2019 6:17:38 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC01_ValidLogin-->Windows chrome: Executing Step Username_txtbox.CLICKABLE(KWSWaitFor)
+Sep 02, 2019 6:17:38 PM org.xframium.device.factory.DeviceWebDriver findElements
+INFO: xF-TC01_ValidLogin-->Windows chrome: Locating element using [By.xpath: //input[@name='username']]
+Sep 02, 2019 6:17:39 PM org.xframium.device.factory.DeviceWebDriver$DeviceTimeouts implicitlyWait
+INFO: Setting IMPLICIT WAIT to 10000
+Sep 02, 2019 6:17:39 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC01_ValidLogin-->Windows chrome: Executing Step Username_txtbox(KWSSet)
+Sep 02, 2019 6:17:39 PM org.xframium.page.keyWord.step.spi.KWSSet _executeStep
+INFO: Attmepting to set Username_txtbox to [admin]
+Sep 02, 2019 6:17:39 PM org.xframium.device.factory.DeviceWebDriver findElements
+INFO: xF-TC01_ValidLogin-->Windows chrome: Locating element using [By.xpath: //input[@name='username']]
+Sep 02, 2019 6:17:39 PM org.xframium.page.element.spi.set.AbstractSetMethod set
+INFO: xF-TC01_ValidLogin-->Windows chrome: Setting value to admin using [DefaultSetMethod]
+Sep 02, 2019 6:17:39 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC01_ValidLogin-->Windows chrome: Executing Step Password_txtbox(KWSSet)
+Sep 02, 2019 6:17:39 PM org.xframium.page.keyWord.step.spi.KWSSet _executeStep
+INFO: Attmepting to set Password_txtbox to [demo123]
+Sep 02, 2019 6:17:39 PM org.xframium.device.factory.DeviceWebDriver findElements
+INFO: xF-TC01_ValidLogin-->Windows chrome: Locating element using [By.xpath: //input[@name='password']]
+Sep 02, 2019 6:17:39 PM org.xframium.page.element.spi.set.AbstractSetMethod set
+INFO: xF-TC01_ValidLogin-->Windows chrome: Setting value to demo123 using [DefaultSetMethod]
+Sep 02, 2019 6:17:39 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC01_ValidLogin-->Windows chrome: Executing Step Signin_btn(KWSClick)
+Sep 02, 2019 6:17:39 PM org.xframium.device.factory.DeviceWebDriver findElements
+INFO: xF-TC01_ValidLogin-->Windows chrome: Locating element using [By.xpath: //button[@class='btn btn-lg btn-block btn-flat login-button']]
+Sep 02, 2019 6:17:44 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC01_ValidLogin-->Windows chrome: Executing Step Logout_Function(KWSCall2)
+Sep 02, 2019 6:17:44 PM org.xframium.page.keyWord.KeyWordTest executeTest
+INFO: *** Executing Test Logout_Function
+Sep 02, 2019 6:17:44 PM org.xframium.page.keyWord.KeyWordTest executeTest
+INFO: Creating Page [CloudSchool.CSHomePage]
+Sep 02, 2019 6:17:44 PM org.xframium.page.factory.DefaultPageFactory _createPage
+INFO: Attempting to create PROXY interface by interface org.xframium.page.keyWord.KeyWordPage
+Sep 02, 2019 6:17:44 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC01_ValidLogin-->Windows chrome: Executing Step MrAdmin_topnav.CLICKABLE(KWSWaitFor)
+Sep 02, 2019 6:17:44 PM org.xframium.device.factory.DeviceWebDriver findElements
+INFO: xF-TC01_ValidLogin-->Windows chrome: Locating element using [By.xpath: (//span[contains(text(),'Mr. admin')])[1]]
+Sep 02, 2019 6:17:44 PM org.xframium.device.factory.DeviceWebDriver$DeviceTimeouts implicitlyWait
+INFO: Setting IMPLICIT WAIT to 10000
+Sep 02, 2019 6:17:44 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC01_ValidLogin-->Windows chrome: Executing Step MrAdmin_topnav(KWSClick)
+Sep 02, 2019 6:17:44 PM org.xframium.device.factory.DeviceWebDriver findElements
+INFO: xF-TC01_ValidLogin-->Windows chrome: Locating element using [By.xpath: (//span[contains(text(),'Mr. admin')])[1]]
+Sep 02, 2019 6:17:44 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC01_ValidLogin-->Windows chrome: Executing Step Logout_link.CLICKABLE(KWSWaitFor)
+Sep 02, 2019 6:17:44 PM org.xframium.device.factory.DeviceWebDriver findElements
+INFO: xF-TC01_ValidLogin-->Windows chrome: Locating element using [By.xpath: //li[contains(@class,'user-footer')]//div[1]//a[1]//div[1]]
+Sep 02, 2019 6:17:44 PM org.xframium.device.factory.DeviceWebDriver$DeviceTimeouts implicitlyWait
+INFO: Setting IMPLICIT WAIT to 10000
+Sep 02, 2019 6:17:44 PM org.xframium.page.keyWord.step.AbstractKeyWordStep executeStep
+INFO: xF-TC01_ValidLogin-->Windows chrome: Executing Step Logout_link(KWSClick)
+Sep 02, 2019 6:17:44 PM org.xframium.device.factory.DeviceWebDriver findElements
+INFO: xF-TC01_ValidLogin-->Windows chrome: Locating element using [By.xpath: //li[contains(@class,'user-footer')]//div[1]//a[1]//div[1]]
+Sep 02, 2019 6:17:46 PM org.xframium.driver.XMLTestDriver testDriver
+INFO: xF-TC01_ValidLogin-->Windows chrome: Completed Executing Chrome - TC01_ValidLogin against Chrome
+Sep 02, 2019 6:17:46 PM org.xframium.device.ng.AbstractSeleniumTest cleanUpConnectedDevice
+INFO: xF-TC01_ValidLogin-->Windows chrome: Attempting to clean up TC01_ValidLogin on WINDOWS 10 Chrome
+Sep 02, 2019 6:17:46 PM org.xframium.device.ng.AbstractSeleniumTest cleanUpConnectedDevice
+INFO: xF-TC01_ValidLogin-->Windows chrome:Closing WebDriver 
+Sep 02, 2019 6:17:47 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC01_ValidLogin-->Windows chrome: Generating artifact for DEVICE_LOG
+Sep 02, 2019 6:17:47 PM org.xframium.device.cloud.action.SELENIUMCloudActionProvider getLog
+INFO: Could not generate device logs
+Sep 02, 2019 6:17:47 PM org.xframium.artifact.AbstractArtifact generateArtifact
+INFO: xF-TC01_ValidLogin-->Windows chrome: Generating artifact for CONSOLE_LOG
