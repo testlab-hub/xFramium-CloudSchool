@@ -15,4 +15,8 @@
 		<step name="InvalidLogin_Function" type="CALL2" />
 	</test>
 	
+	<test name="TC03_FailedLogin" active="true" dataProvider="LoginCredentials.TestUser_Two" >
+		<step name="FailedLogin_Function" type="CALL2" />
+	</test>
+	
 </suite>

@@ -55,12 +55,12 @@
 		
 		<!-- Test blank text box -->
 		<step name="Signin_btn" page="CSLoginPage" type="CLICK" />
-		<step name="Username_error_text.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
+		<step name="Error_msg_text.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
 			<parameter type="STATIC" value="45" />
 		</step>
-		<step name="Password_error_text.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
+<!-- 		<step name="Error_msg_text.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
 			<parameter type="STATIC" value="45" />
-		</step>
+		</step> -->
 		
 		<!-- Test incorrect length input -->
 		<step name="Username_txtbox.CLICKABLE" page="CSLoginPage" type="WAIT_FOR">
@@ -69,14 +69,14 @@
 		<step name="Username_txtbox" page="CSLoginPage" type="SET">
 			<parameter type="DATA" value="LoginCredentials.InvalidUserName" />
 		</step>
-		<step name="Username_error_text.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
+		<step name="Error_msg_text.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
 			<parameter type="STATIC" value="45" />
 		</step>
 		
 		<step name="Password_txtbox" page="CSLoginPage" type="SET">
 			<parameter type="DATA" value="LoginCredentials.InvalidPassword" />
 		</step>
-		<step name="Password_error_text.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
+		<step name="Error_msg_text.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
 			<parameter type="STATIC" value="45" />
 		</step>
 		
@@ -88,7 +88,7 @@
 			<parameter type="DATA" value="LoginCredentials.Password" />
 		</step>
 		<step name="Signin_btn" page="CSLoginPage" type="CLICK" />
-		<step name="UsernamePassword_error_panel.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
+		<step name="Error_msg_text.VISIBLE" page="CSLoginPage" type="WAIT_FOR">
 			<parameter type="STATIC" value="45" />
 		</step>
 	</function>
